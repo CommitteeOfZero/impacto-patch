@@ -205,6 +205,18 @@ root.Subtitle = {
           Path = "games/chlcc/gamedata/subtitles/OP2_tlonly.ass"
         },
       },
+      [19] = {
+        {
+          Type = SubtitleType.Ass,
+          Config = SubtitleConfigType.Karaoke,
+          Path = "games/chlcc/gamedata/subtitles/OP4_karaonly.ass",
+        },
+        {
+          Type = SubtitleType.Ass,
+          Config = SubtitleConfigType.Translation,
+          Path = "games/chlcc/gamedata/subtitles/OP4_tlonly.ass"
+        },
+      },
     },
     bgm = {
       [70] = {{

@@ -25,6 +25,18 @@ root.Subtitle = {
           Path = "games/cclcc/gamedata/subtitles/movie_ed03_tlonly.ass"
         },
       },
+      ["movie_op_swi.mp4"] = {
+        {
+          Type = SubtitleType.Ass,
+          Config = SubtitleConfigType.Karaoke,
+          Path = "games/cclcc/gamedata/subtitles/movie_op_swi_karaonly.ass",
+        },
+        {
+          Type = SubtitleType.Ass,
+          Config = SubtitleConfigType.Translation,
+          Path = "games/cclcc/gamedata/subtitles/movie_op_swi_tlonly.ass"
+        },
+      },
     },
   },
   SubtitleFontsDir = {"games/cclcc/gamedata/fonts"}
