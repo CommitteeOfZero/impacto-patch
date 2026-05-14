@@ -1,0 +1,9 @@
+include(root.BaseConfig.RootProfilesDir .. '/chlcc/font-lb.lua');
+include(root.BaseConfig.RootPatchesDir .. '/profiles/chlcc/subtitle.lua');
+include(root.BaseConfig.RootPatchesDir .. '/profiles/chlcc/dialogue.lua');
+include(root.BaseConfig.RootPatchesDir .. '/profiles/chlcc/sprites.lua');
+include(root.BaseConfig.RootPatchesDir .. '/profiles/chlcc/tipssystem.lua');
+include(root.BaseConfig.RootPatchesDir .. '/profiles/chlcc/hud/delusiontrigger.lua');
+include(root.BaseConfig.RootPatchesDir .. '/profiles/chlcc/hud/extramenus.lua');
+include(root.BaseConfig.RootPatchesDir .. '/profiles/chlcc/hud/optionsmenu.lua');
+include(root.BaseConfig.RootPatchesDir .. '/profiles/chlcc/hud/titlemenu.lua');

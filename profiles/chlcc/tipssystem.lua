@@ -1,0 +1,1 @@
+-- root.TipsSystem.SortCategoryMapping = {}; todo?
