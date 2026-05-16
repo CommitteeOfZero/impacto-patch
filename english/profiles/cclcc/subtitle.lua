@@ -5,12 +5,12 @@ root.Subtitle = {
         { 
           Type = SubtitleType.Ass, 
           Config = SubtitleConfigType.Karaoke,
-          Path = root.BaseConfig.RootPatchesDir .. "/games/cclcc/subtitles/movie_op_lq_v3_karaonly.ass",
+          Path = root.BaseConfig.RootPatchesDir .. "/english/gamedata/cclcc/subtitles/movie_op_lq_v3_karaonly.ass",
         },
         { 
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Translation,
-          Path = root.BaseConfig.RootPatchesDir .. "/games/cclcc/subtitles/movie_op_lq_v3_tlonly.ass"
+          Path = root.BaseConfig.RootPatchesDir .. "/english/gamedata/cclcc/subtitles/movie_op_lq_v3_tlonly.ass"
         },
       },
     },
@@ -18,10 +18,10 @@ root.Subtitle = {
       ["bgmFD02.at9"] = {{ 
         Type = SubtitleType.Ass,
         Config = SubtitleConfigType.Karaoke,
-        Path = root.BaseConfig.RootPatchesDir .. "/games/cclcc/subtitles/movie_op_lq_v3_karaonly.ass"
+        Path = root.BaseConfig.RootPatchesDir .. "/english/gamedata/cclcc/subtitles/movie_op_lq_v3_karaonly.ass"
       }},
     }
 
   },
-  SubtitleFontsDir = {root.BaseConfig.RootPatchesDir .. "/games/cclcc/fonts"}
+  SubtitleFontsDir = {root.BaseConfig.RootPatchesDir .. "/english/gamedata/cclcc/fonts"}
 };

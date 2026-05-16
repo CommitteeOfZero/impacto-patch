@@ -5,4 +5,4 @@ root.Patch = {
   DateFormat = DateFormatType.YMD,
 }
 
-include(root.BaseConfig.RootPatchesDir .. "/profiles/cclcc/game.lua") 
+include(root.BaseConfig.RootPatchesDir .. "/english/profiles/cclcc/game.lua") 

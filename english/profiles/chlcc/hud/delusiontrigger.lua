@@ -2,12 +2,12 @@ root.DelusionTrigger.DelusionScaledGlyphWidth = 195;
 root.DelusionTrigger.DelusionTextLineSpacing = 5;
 
 -- Clear existing
-for glyphLine in pairs(root.DelusionTrigger.DelusionTextGlyphs) do
-  for glyph in glyphLine do
+for i, glyphLine in pairs(root.DelusionTrigger.DelusionTextGlyphs) do
+  for j, glyph in ipairs(glyphLine) do
       root.Sprites[glyph] = nil;
   end
 end
-root.DelusionTrigger.DelusionTextGlyphs = nil;
+root.DelusionTrigger.DelusionTextGlyphs = {};
 
 local delusionTextGlyphs = {
   {
