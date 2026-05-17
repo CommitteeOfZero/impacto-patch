@@ -9,16 +9,11 @@ root.TitleMenu.LCCLogoPositions[1] = { X = 231, Y = 333 };
 root.TitleMenu.DelusionADVPosition = { X = 76, Y = 397 };
 root.TitleMenu.LCCLogoUnderPosition = { X = 242, Y = 328 }
 
-local oldCount = root.TitleMenu.IntroDelusionADVSpriteCount;
 root.TitleMenu.IntroDelusionADVSprites = {};
 root.TitleMenu.IntroDelusionADVSpriteCount = #root.TitleMenu.IntroDelusionADVPositions;
 for i = 1, root.TitleMenu.IntroDelusionADVSpriteCount do
     root.TitleMenu.IntroDelusionADVSprites[i] = "IntroDelusionADV" .. i
 end
-for i = root.TitleMenu.IntroDelusionADVSpriteCount, oldCount do
-    root.TitleMenu.IntroDelusionADVSprites[i] = nil
-end
-
 root.Sprites["DelusionADVUnder"] = {
     Sheet = "Title",
     Bounds = { X = 1862, Y = 785, Width = 154, Height = 33 },

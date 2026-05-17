@@ -7,3 +7,4 @@ include(root.BaseConfig.RootPatchesDir .. '/english/profiles/chlcc/hud/delusiont
 include(root.BaseConfig.RootPatchesDir .. '/english/profiles/chlcc/hud/extramenus.lua');
 include(root.BaseConfig.RootPatchesDir .. '/english/profiles/chlcc/hud/optionsmenu.lua');
 include(root.BaseConfig.RootPatchesDir .. '/english/profiles/chlcc/hud/titlemenu.lua');
+include(root.BaseConfig.RootPatchesDir .. '/english/profiles/chlcc/vfs.lua');
