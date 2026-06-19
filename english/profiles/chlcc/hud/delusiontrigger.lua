@@ -1055,12 +1055,12 @@ for i = 0, #delusionTextGlyphs - 1 do
   root.DelusionTrigger.DelusionTextGlyphs[i + 1] = currentLine
 end
 
-root.DelusionTrigger.LeftDelusionHeartSprite = "LeftDelusionHeartSprite",
-root.DelusionTrigger.LeftDelusionHeartPos = { X = 7, Y = 279 },
-root.DelusionTrigger.RightDelusionHeartSprite = "RightDelusionHeartSprite",
-root.DelusionTrigger.RightDelusionHeartPos = { X = 1115, Y = 279 },
-root.DelusionTrigger.DelusionHeartPulseDuration = 1.0,
-root.DelusionTrigger.DelusionHeartPulseScale = 0.06,
+root.DelusionTrigger.LeftDelusionHeartSprite = "LeftDelusionHeartSprite";
+root.DelusionTrigger.LeftDelusionHeartPos = { X = 7, Y = 279 };
+root.DelusionTrigger.RightDelusionHeartSprite = "RightDelusionHeartSprite";
+root.DelusionTrigger.RightDelusionHeartPos = { X = 1115, Y = 279 };
+root.DelusionTrigger.DelusionHeartPulseDuration = 1.0;
+root.DelusionTrigger.DelusionHeartPulseScale = 0.06;
 
 if (root.Patch.HasDelusionMouseSupport) then
   root.Sprites["LeftDelusionHeartSprite"] = {
