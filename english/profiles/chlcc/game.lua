@@ -8,3 +8,4 @@ include(root.BaseConfig.RootPatchesDir .. '/english/profiles/chlcc/hud/extramenu
 include(root.BaseConfig.RootPatchesDir .. '/english/profiles/chlcc/hud/optionsmenu.lua');
 include(root.BaseConfig.RootPatchesDir .. '/english/profiles/chlcc/hud/titlemenu.lua');
 include(root.BaseConfig.RootPatchesDir .. '/english/profiles/chlcc/vfs.lua');
+include(root.BaseConfig.RootPatchesDir .. '/english/profiles/chlcc/charset.lua');
