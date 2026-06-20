@@ -1,5 +1,4 @@
 root.Patch = {
-  Language = "English",
   HasScriptedExitLogic = true,
   CloseBacklogWhenReachedEnd = true,
   DateFormat = DateFormatType.YMD,
