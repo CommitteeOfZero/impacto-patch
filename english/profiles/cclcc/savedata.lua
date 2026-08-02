@@ -1,1 +1,1 @@
-root.SaveData.SaveFilePath = root.BaseConfig.RootSavesDir .. "/cclcc/eng/SYSTEM.DAT";
+root.SaveData.SaveFilePath = root.BasePaths.RootSavesDir .. "/cclcc/eng/SYSTEM.DAT";

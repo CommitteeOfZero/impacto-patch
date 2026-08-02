@@ -5,4 +5,4 @@ root.Patch = {
   HasDelusionMouseSupport = true,
 }
 
-include(root.BaseConfig.RootPatchesDir .. "/english/profiles/cclcc/game.lua") 
+include(root.BasePaths.RootPatchesDir .. "/english/profiles/cclcc/game.lua") 
