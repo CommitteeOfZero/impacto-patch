@@ -1,3 +1,5 @@
+root.Dialogue.DialogueFont = "LanguageBarrier";
+
 if root.Dialogue.TextModesInfo == nil then root.Dialogue.TextModesInfo = {}; end
 
 -- ADV box
