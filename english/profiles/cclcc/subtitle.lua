@@ -2,15 +2,39 @@ root.Subtitle = {
   SubtitleMappings = {
     movie = {
       ["movie_op.mp4"] = {
-        { 
+        {
           Type = SubtitleType.Ass, 
           Config = SubtitleConfigType.Karaoke,
           Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/cclcc/subtitles/movie_op_lq_v3_karaonly.ass",
         },
-        { 
+        {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Translation,
           Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/cclcc/subtitles/movie_op_lq_v3_tlonly.ass"
+        },
+      },
+      ["movie_ed03.mp4"] = {
+        {
+          Type = SubtitleType.Ass, 
+          Config = SubtitleConfigType.Karaoke,
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/cclcc/subtitles/movie_ed03_karaonly.ass",
+        },
+        {
+          Type = SubtitleType.Ass,
+          Config = SubtitleConfigType.Translation,
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/cclcc/subtitles/movie_ed03_tlonly.ass"
+        },
+      },
+      ["movie_op_swi.webm"] = {
+        {
+          Type = SubtitleType.Ass, 
+          Config = SubtitleConfigType.Karaoke,
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/cclcc/subtitles/movie_op_swi_karaonly.ass",
+        },
+        {
+          Type = SubtitleType.Ass,
+          Config = SubtitleConfigType.Translation,
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/cclcc/subtitles/movie_op_swi_tlonly.ass"
         },
       },
     },
