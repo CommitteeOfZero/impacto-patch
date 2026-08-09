@@ -224,6 +224,11 @@ root.Subtitle = {
         Config = SubtitleConfigType.Translation,
         Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/contract.ass"
       }},
+      [73] = {{
+        Type = SubtitleType.Ass,
+        Config = SubtitleConfigType.Translation,
+        Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/violet_prayer.ass"
+      }},
     }
   },
   SubtitleFontsDir = {root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/fonts"}
