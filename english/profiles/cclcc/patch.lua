@@ -1,7 +1,7 @@
 root.Patch = {
   HasScriptedExitLogic = true,
   CloseBacklogWhenReachedEnd = true,
-  DateFormat = DateFormatType.YMD,
+  DateFormat = DateFormatType.MDY,
   HasDelusionMouseSupport = true,
 }
 
