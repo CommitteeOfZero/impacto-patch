@@ -29,12 +29,12 @@ root.Subtitle = {
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Karaoke,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_RIM_karaonly.ass",
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_RIM_PSP_karaonly.ass",
         },
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Translation,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_RIM_tlonly.ass"
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_RIM_PSP_tlonly.ass"
         },
       },
       [2] = {
@@ -53,12 +53,12 @@ root.Subtitle = {
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Karaoke,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_NAN_karaonly.ass",
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_NAN_PSP_karaonly.ass",
         },
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Translation,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_NAN_tlonly.ass"
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_NAN_PSP_tlonly.ass"
         },
       },
       [3] = {
@@ -77,12 +77,12 @@ root.Subtitle = {
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Karaoke,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_SEN_karaonly.ass",
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_SEN_PSP_karaonly.ass",
         },
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Translation,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_SEN_tlonly.ass"
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_SEN_PSP_tlonly.ass"
         },
       },
       [4] = {
@@ -101,12 +101,12 @@ root.Subtitle = {
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Karaoke,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_YUA_karaonly.ass",
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_YUA_PSP_karaonly.ass",
         },
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Translation,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_YUA_tlonly.ass"
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_YUA_PSP_tlonly.ass"
         },
       },
       [5] = {
@@ -125,12 +125,12 @@ root.Subtitle = {
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Karaoke,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_MIA_karaonly.ass",
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_MIA_PSP_karaonly.ass",
         },
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Translation,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_MIA_tlonly.ass"
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_MIA_PSP_tlonly.ass"
         },
       },
       [6] = {
@@ -173,12 +173,12 @@ root.Subtitle = {
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Karaoke,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_KOZ_karaonly.ass",
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_KOZ_PSP_karaonly.ass",
         },
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Translation,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_KOZ_tlonly.ass"
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_KOZ_PSP_tlonly.ass"
         },
       },
       [10] = {
