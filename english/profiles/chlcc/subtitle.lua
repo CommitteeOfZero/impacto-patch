@@ -149,12 +149,12 @@ root.Subtitle = {
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Karaoke,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_AYA_karaonly.ass",
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_AYA_PSP_karaonly.ass",
         },
         {
           Type = SubtitleType.Ass,
           Config = SubtitleConfigType.Translation,
-          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_AYA_tlonly.ass"
+          Path = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/subtitles/ENDROLL_AYA_PSP_tlonly.ass"
         },
       },
       [7] = {
