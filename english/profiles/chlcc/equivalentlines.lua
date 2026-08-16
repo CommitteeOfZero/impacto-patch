@@ -39,16 +39,12 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.AA09, StartLineId = 296, EndLineId = 311},
     },
     {
-        {ScriptId = scriptIds.AA14, StartLineId = 442, EndLineId = 449},
-        {ScriptId = scriptIds.AA14, StartLineId = 500, EndLineId = 507},
+        {ScriptId = scriptIds.AA14, StartLineId = 441, EndLineId = 450},
+        {ScriptId = scriptIds.AA14, StartLineId = 499, EndLineId = 508},
     },
     {
         {ScriptId = scriptIds.AY03, StartLineId = 22, EndLineId = 35},
         {ScriptId = scriptIds.KO05, StartLineId = 18, EndLineId = 31},
-    },
-    {
-        {ScriptId = scriptIds.AY03, StartLineId = 51, EndLineId = 57},
-        {ScriptId = scriptIds.NA03, StartLineId = 249, EndLineId = 255},
     },
     {
         {ScriptId = scriptIds.NA02, StartLineId = 340, EndLineId = 346},
@@ -63,8 +59,12 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU02B, StartLineId = 3, EndLineId = 97},
     },
     {
-        {ScriptId = scriptIds.YU03A, StartLineId = 0, EndLineId = 14},
-        {ScriptId = scriptIds.YU03B, StartLineId = 0, EndLineId = 14},
+        {ScriptId = scriptIds.YU03A, StartLineId = 0, EndLineId = 8},
+        {ScriptId = scriptIds.YU03B, StartLineId = 0, EndLineId = 8},
+    },
+    {
+        {ScriptId = scriptIds.YU03A, StartLineId = 10, EndLineId = 14},
+        {ScriptId = scriptIds.YU03B, StartLineId = 10, EndLineId = 14},
     },
     {
         {ScriptId = scriptIds.YU03A, StartLineId = 16, EndLineId = 24},
@@ -91,8 +91,8 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU03B, StartLineId = 38, EndLineId = 39},
     },
     {
-        {ScriptId = scriptIds.YU03A, StartLineId = 41, EndLineId = 42},
-        {ScriptId = scriptIds.YU03B, StartLineId = 41, EndLineId = 42},
+        {ScriptId = scriptIds.YU03A, LineId = 41},
+        {ScriptId = scriptIds.YU03B, LineId = 41},
     },
     {
         {ScriptId = scriptIds.YU03A, StartLineId = 44, EndLineId = 46},
@@ -115,24 +115,44 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU03B, StartLineId = 62, EndLineId = 71},
     },
     {
-        {ScriptId = scriptIds.YU03A, StartLineId = 73, EndLineId = 95},
-        {ScriptId = scriptIds.YU03B, StartLineId = 73, EndLineId = 95},
+        {ScriptId = scriptIds.YU03A, StartLineId = 73, EndLineId = 75},
+        {ScriptId = scriptIds.YU03B, StartLineId = 73, EndLineId = 75},
     },
     {
-        {ScriptId = scriptIds.YU03A, StartLineId = 97, EndLineId = 125},
-        {ScriptId = scriptIds.YU03B, StartLineId = 97, EndLineId = 125},
+        {ScriptId = scriptIds.YU03A, StartLineId = 77, EndLineId = 95},
+        {ScriptId = scriptIds.YU03B, StartLineId = 77, EndLineId = 95},
     },
     {
-        {ScriptId = scriptIds.YU03A, StartLineId = 129, EndLineId = 154},
-        {ScriptId = scriptIds.YU03B, StartLineId = 129, EndLineId = 154},
+        {ScriptId = scriptIds.YU03A, StartLineId = 97, EndLineId = 112},
+        {ScriptId = scriptIds.YU03B, StartLineId = 97, EndLineId = 112},
+    },
+    {
+        {ScriptId = scriptIds.YU03A, StartLineId = 114, EndLineId = 125},
+        {ScriptId = scriptIds.YU03B, StartLineId = 114, EndLineId = 125},
+    },
+    {
+        {ScriptId = scriptIds.YU03A, StartLineId = 129, EndLineId = 137},
+        {ScriptId = scriptIds.YU03B, StartLineId = 129, EndLineId = 137},
+    },
+    {
+        {ScriptId = scriptIds.YU03A, StartLineId = 139, EndLineId = 146},
+        {ScriptId = scriptIds.YU03B, StartLineId = 139, EndLineId = 146},
+    },
+    {
+        {ScriptId = scriptIds.YU03A, StartLineId = 148, EndLineId = 154},
+        {ScriptId = scriptIds.YU03B, StartLineId = 148, EndLineId = 154},
     },
     {
         {ScriptId = scriptIds.YU03A, StartLineId = 155, EndLineId = 160},
         {ScriptId = scriptIds.YU03B, StartLineId = 156, EndLineId = 161},
     },
     {
-        {ScriptId = scriptIds.YU03A, StartLineId = 162, EndLineId = 169},
-        {ScriptId = scriptIds.YU03B, StartLineId = 163, EndLineId = 170},
+        {ScriptId = scriptIds.YU03A, StartLineId = 162, EndLineId = 163},
+        {ScriptId = scriptIds.YU03B, StartLineId = 163, EndLineId = 164},
+    },
+    {
+        {ScriptId = scriptIds.YU03A, StartLineId = 165, EndLineId = 169},
+        {ScriptId = scriptIds.YU03B, StartLineId = 166, EndLineId = 170},
     },
     {
         {ScriptId = scriptIds.YU03A, StartLineId = 171, EndLineId = 184},
@@ -143,20 +163,28 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU03B, LineId = 187},
     },
     {
-        {ScriptId = scriptIds.YU03A, StartLineId = 188, EndLineId = 216},
-        {ScriptId = scriptIds.YU03B, StartLineId = 188, EndLineId = 216},
+        {ScriptId = scriptIds.YU03A, LineId = 188},
+        {ScriptId = scriptIds.YU03B, LineId = 188},
+    },
+    {
+        {ScriptId = scriptIds.YU03A, StartLineId = 191, EndLineId = 193},
+        {ScriptId = scriptIds.YU03B, StartLineId = 191, EndLineId = 193},
+    },
+    {
+        {ScriptId = scriptIds.YU03A, StartLineId = 195, EndLineId = 216},
+        {ScriptId = scriptIds.YU03B, StartLineId = 195, EndLineId = 216},
     },
     {
         {ScriptId = scriptIds.YU03A, StartLineId = 218, EndLineId = 229},
         {ScriptId = scriptIds.YU03B, StartLineId = 218, EndLineId = 229},
     },
     {
-        {ScriptId = scriptIds.YU03A, StartLineId = 231, EndLineId = 250},
-        {ScriptId = scriptIds.YU03B, StartLineId = 231, EndLineId = 250},
+        {ScriptId = scriptIds.YU03A, StartLineId = 231, EndLineId = 232},
+        {ScriptId = scriptIds.YU03B, StartLineId = 231, EndLineId = 232},
     },
     {
-        {ScriptId = scriptIds.YU03A, StartLineId = 252, EndLineId = 254},
-        {ScriptId = scriptIds.YU03B, StartLineId = 252, EndLineId = 254},
+        {ScriptId = scriptIds.YU03A, StartLineId = 234, EndLineId = 254},
+        {ScriptId = scriptIds.YU03B, StartLineId = 234, EndLineId = 254},
     },
     {
         {ScriptId = scriptIds.YU03A, StartLineId = 257, EndLineId = 259},
@@ -175,10 +203,6 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU04B, LineId = 26},
     },
     {
-        {ScriptId = scriptIds.YU04A, LineId = 28},
-        {ScriptId = scriptIds.YU04B, LineId = 28},
-    },
-    {
         {ScriptId = scriptIds.YU04A, LineId = 30},
         {ScriptId = scriptIds.YU04B, LineId = 30},
     },
@@ -191,8 +215,12 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU04B, StartLineId = 34, EndLineId = 51},
     },
     {
-        {ScriptId = scriptIds.YU04A, StartLineId = 53, EndLineId = 65},
-        {ScriptId = scriptIds.YU04B, StartLineId = 53, EndLineId = 65},
+        {ScriptId = scriptIds.YU04A, StartLineId = 53, EndLineId = 55},
+        {ScriptId = scriptIds.YU04B, StartLineId = 53, EndLineId = 55},
+    },
+    {
+        {ScriptId = scriptIds.YU04A, StartLineId = 57, EndLineId = 65},
+        {ScriptId = scriptIds.YU04B, StartLineId = 57, EndLineId = 65},
     },
     {
         {ScriptId = scriptIds.YU04A, StartLineId = 68, EndLineId = 70},
@@ -213,10 +241,6 @@ root.SaveData.EquivalentLines = {
     {
         {ScriptId = scriptIds.YU04A, StartLineId = 99, EndLineId = 102},
         {ScriptId = scriptIds.YU04B, StartLineId = 98, EndLineId = 101},
-    },
-    {
-        {ScriptId = scriptIds.YU04A, LineId = 104},
-        {ScriptId = scriptIds.YU04B, LineId = 103},
     },
     {
         {ScriptId = scriptIds.YU04A, StartLineId = 106, EndLineId = 107},
@@ -247,20 +271,16 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU04B, StartLineId = 132, EndLineId = 133},
     },
     {
-        {ScriptId = scriptIds.YU04A, LineId = 152},
-        {ScriptId = scriptIds.YU04B, LineId = 149},
-    },
-    {
-        {ScriptId = scriptIds.YU04A, StartLineId = 155, EndLineId = 158},
-        {ScriptId = scriptIds.YU04B, StartLineId = 153, EndLineId = 156},
+        {ScriptId = scriptIds.YU04A, StartLineId = 155, EndLineId = 157},
+        {ScriptId = scriptIds.YU04B, StartLineId = 153, EndLineId = 155},
     },
     {
         {ScriptId = scriptIds.YU04A, LineId = 160},
         {ScriptId = scriptIds.YU04B, LineId = 158},
     },
     {
-        {ScriptId = scriptIds.YU04A, StartLineId = 163, EndLineId = 164},
-        {ScriptId = scriptIds.YU04B, StartLineId = 161, EndLineId = 162},
+        {ScriptId = scriptIds.YU04A, LineId = 163},
+        {ScriptId = scriptIds.YU04B, LineId = 161},
     },
     {
         {ScriptId = scriptIds.YU04A, LineId = 166},
@@ -279,32 +299,32 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU04B, LineId = 177},
     },
     {
-        {ScriptId = scriptIds.YU04A, StartLineId = 181, EndLineId = 185},
-        {ScriptId = scriptIds.YU04B, StartLineId = 179, EndLineId = 183},
+        {ScriptId = scriptIds.YU04A, StartLineId = 182, EndLineId = 183},
+        {ScriptId = scriptIds.YU04B, StartLineId = 180, EndLineId = 181},
+    },
+    {
+        {ScriptId = scriptIds.YU04A, LineId = 185},
+        {ScriptId = scriptIds.YU04B, LineId = 183},
     },
     {
         {ScriptId = scriptIds.YU04A, LineId = 193},
         {ScriptId = scriptIds.YU04B, LineId = 190},
     },
     {
-        {ScriptId = scriptIds.YU04A, StartLineId = 196, EndLineId = 202},
-        {ScriptId = scriptIds.YU04B, StartLineId = 193, EndLineId = 199},
+        {ScriptId = scriptIds.YU04A, StartLineId = 196, EndLineId = 197},
+        {ScriptId = scriptIds.YU04B, StartLineId = 193, EndLineId = 194},
+    },
+    {
+        {ScriptId = scriptIds.YU04A, StartLineId = 199, EndLineId = 202},
+        {ScriptId = scriptIds.YU04B, StartLineId = 196, EndLineId = 199},
     },
     {
         {ScriptId = scriptIds.YU04A, StartLineId = 204, EndLineId = 205},
         {ScriptId = scriptIds.YU04B, StartLineId = 201, EndLineId = 202},
     },
     {
-        {ScriptId = scriptIds.YU04A, LineId = 209},
-        {ScriptId = scriptIds.YU04B, LineId = 207},
-    },
-    {
         {ScriptId = scriptIds.YU04A, LineId = 212},
         {ScriptId = scriptIds.YU04B, LineId = 210},
-    },
-    {
-        {ScriptId = scriptIds.YU04A, StartLineId = 214, EndLineId = 215},
-        {ScriptId = scriptIds.YU04B, StartLineId = 212, EndLineId = 213},
     },
     {
         {ScriptId = scriptIds.YU04A, StartLineId = 217, EndLineId = 226},
@@ -323,8 +343,8 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU04B, LineId = 232},
     },
     {
-        {ScriptId = scriptIds.YU04A, StartLineId = 236, EndLineId = 239},
-        {ScriptId = scriptIds.YU04B, StartLineId = 234, EndLineId = 237},
+        {ScriptId = scriptIds.YU04A, StartLineId = 236, EndLineId = 238},
+        {ScriptId = scriptIds.YU04B, StartLineId = 234, EndLineId = 236},
     },
     {
         {ScriptId = scriptIds.YU04A, StartLineId = 241, EndLineId = 247},
@@ -383,24 +403,24 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU05B, StartLineId = 48, EndLineId = 60},
     },
     {
-        {ScriptId = scriptIds.YU05A, StartLineId = 62, EndLineId = 74},
-        {ScriptId = scriptIds.YU05B, StartLineId = 62, EndLineId = 74},
+        {ScriptId = scriptIds.YU05A, StartLineId = 63, EndLineId = 74},
+        {ScriptId = scriptIds.YU05B, StartLineId = 63, EndLineId = 74},
     },
     {
         {ScriptId = scriptIds.YU05A, StartLineId = 76, EndLineId = 77},
         {ScriptId = scriptIds.YU05B, StartLineId = 76, EndLineId = 77},
     },
     {
-        {ScriptId = scriptIds.YU05A, StartLineId = 79, EndLineId = 85},
-        {ScriptId = scriptIds.YU05B, StartLineId = 79, EndLineId = 85},
+        {ScriptId = scriptIds.YU05A, StartLineId = 79, EndLineId = 82},
+        {ScriptId = scriptIds.YU05B, StartLineId = 79, EndLineId = 82},
+    },
+    {
+        {ScriptId = scriptIds.YU05A, LineId = 84},
+        {ScriptId = scriptIds.YU05B, LineId = 84},
     },
     {
         {ScriptId = scriptIds.YU05A, StartLineId = 87, EndLineId = 91},
         {ScriptId = scriptIds.YU05B, StartLineId = 87, EndLineId = 91},
-    },
-    {
-        {ScriptId = scriptIds.YU05A, LineId = 93},
-        {ScriptId = scriptIds.YU05B, LineId = 93},
     },
     {
         {ScriptId = scriptIds.YU05A, LineId = 95},
@@ -415,12 +435,12 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU05B, LineId = 102},
     },
     {
-        {ScriptId = scriptIds.YU05A, StartLineId = 105, EndLineId = 106},
-        {ScriptId = scriptIds.YU05B, StartLineId = 105, EndLineId = 106},
+        {ScriptId = scriptIds.YU05A, LineId = 105},
+        {ScriptId = scriptIds.YU05B, LineId = 105},
     },
     {
-        {ScriptId = scriptIds.YU05A, StartLineId = 108, EndLineId = 121},
-        {ScriptId = scriptIds.YU05B, StartLineId = 109, EndLineId = 122},
+        {ScriptId = scriptIds.YU05A, StartLineId = 110, EndLineId = 121},
+        {ScriptId = scriptIds.YU05B, StartLineId = 111, EndLineId = 122},
     },
     {
         {ScriptId = scriptIds.YU05A, StartLineId = 124, EndLineId = 127},
@@ -439,12 +459,8 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU05B, StartLineId = 151, EndLineId = 153},
     },
     {
-        {ScriptId = scriptIds.YU05A, StartLineId = 154, EndLineId = 157},
-        {ScriptId = scriptIds.YU05B, StartLineId = 155, EndLineId = 158},
-    },
-    {
-        {ScriptId = scriptIds.YU05A, LineId = 159},
-        {ScriptId = scriptIds.YU05B, LineId = 160},
+        {ScriptId = scriptIds.YU05A, StartLineId = 155, EndLineId = 156},
+        {ScriptId = scriptIds.YU05B, StartLineId = 156, EndLineId = 157},
     },
     {
         {ScriptId = scriptIds.YU05A, StartLineId = 161, EndLineId = 165},
@@ -455,8 +471,12 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU05B, StartLineId = 169, EndLineId = 177},
     },
     {
-        {ScriptId = scriptIds.YU06A, StartLineId = 0, EndLineId = 6},
-        {ScriptId = scriptIds.YU06B, StartLineId = 0, EndLineId = 6},
+        {ScriptId = scriptIds.YU06A, StartLineId = 0, EndLineId = 4},
+        {ScriptId = scriptIds.YU06B, StartLineId = 0, EndLineId = 4},
+    },
+    {
+        {ScriptId = scriptIds.YU06A, LineId = 6},
+        {ScriptId = scriptIds.YU06B, LineId = 6},
     },
     {
         {ScriptId = scriptIds.YU06A, StartLineId = 8, EndLineId = 9},
@@ -475,8 +495,12 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU06B, LineId = 37},
     },
     {
-        {ScriptId = scriptIds.YU06A, StartLineId = 36, EndLineId = 54},
-        {ScriptId = scriptIds.YU06B, StartLineId = 39, EndLineId = 57},
+        {ScriptId = scriptIds.YU06A, StartLineId = 36, EndLineId = 51},
+        {ScriptId = scriptIds.YU06B, StartLineId = 39, EndLineId = 54},
+    },
+    {
+        {ScriptId = scriptIds.YU06A, StartLineId = 53, EndLineId = 54},
+        {ScriptId = scriptIds.YU06B, StartLineId = 56, EndLineId = 57},
     },
     {
         {ScriptId = scriptIds.YU06A, LineId = 56},
@@ -487,12 +511,8 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU06B, LineId = 61},
     },
     {
-        {ScriptId = scriptIds.YU06A, LineId = 60},
-        {ScriptId = scriptIds.YU06B, LineId = 63},
-    },
-    {
-        {ScriptId = scriptIds.YU06A, StartLineId = 62, EndLineId = 66},
-        {ScriptId = scriptIds.YU06B, StartLineId = 65, EndLineId = 69},
+        {ScriptId = scriptIds.YU06A, StartLineId = 62, EndLineId = 65},
+        {ScriptId = scriptIds.YU06B, StartLineId = 65, EndLineId = 68},
     },
     {
         {ScriptId = scriptIds.YU06A, StartLineId = 68, EndLineId = 84},
@@ -503,28 +523,20 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU06B, StartLineId = 89, EndLineId = 90},
     },
     {
-        {ScriptId = scriptIds.YU06A, StartLineId = 89, EndLineId = 90},
-        {ScriptId = scriptIds.YU06B, StartLineId = 92, EndLineId = 93},
-    },
-    {
         {ScriptId = scriptIds.YU06A, LineId = 92},
         {ScriptId = scriptIds.YU06B, LineId = 95},
-    },
-    {
-        {ScriptId = scriptIds.YU06A, LineId = 94},
-        {ScriptId = scriptIds.YU06B, LineId = 97},
     },
     {
         {ScriptId = scriptIds.YU06A, LineId = 96},
         {ScriptId = scriptIds.YU06B, LineId = 99},
     },
     {
-        {ScriptId = scriptIds.YU06A, StartLineId = 98, EndLineId = 102},
-        {ScriptId = scriptIds.YU06B, StartLineId = 101, EndLineId = 105},
+        {ScriptId = scriptIds.YU06A, StartLineId = 101, EndLineId = 102},
+        {ScriptId = scriptIds.YU06B, StartLineId = 104, EndLineId = 105},
     },
     {
-        {ScriptId = scriptIds.YU06A, StartLineId = 108, EndLineId = 111},
-        {ScriptId = scriptIds.YU06B, StartLineId = 111, EndLineId = 114},
+        {ScriptId = scriptIds.YU06A, StartLineId = 109, EndLineId = 111},
+        {ScriptId = scriptIds.YU06B, StartLineId = 112, EndLineId = 114},
     },
     {
         {ScriptId = scriptIds.YU06A, StartLineId = 115, EndLineId = 118},
@@ -535,8 +547,8 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU06B, LineId = 123},
     },
     {
-        {ScriptId = scriptIds.YU06A, StartLineId = 122, EndLineId = 127},
-        {ScriptId = scriptIds.YU06B, StartLineId = 125, EndLineId = 130},
+        {ScriptId = scriptIds.YU06A, StartLineId = 123, EndLineId = 126},
+        {ScriptId = scriptIds.YU06B, StartLineId = 126, EndLineId = 129},
     },
     {
         {ScriptId = scriptIds.YU06A, StartLineId = 129, EndLineId = 138},
@@ -563,8 +575,12 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU07B, StartLineId = 14, EndLineId = 18},
     },
     {
-        {ScriptId = scriptIds.YU07A, StartLineId = 19, EndLineId = 24},
-        {ScriptId = scriptIds.YU07B, StartLineId = 20, EndLineId = 25},
+        {ScriptId = scriptIds.YU07A, StartLineId = 19, EndLineId = 22},
+        {ScriptId = scriptIds.YU07B, StartLineId = 20, EndLineId = 23},
+    },
+    {
+        {ScriptId = scriptIds.YU07A, LineId = 24},
+        {ScriptId = scriptIds.YU07B, LineId = 25},
     },
     {
         {ScriptId = scriptIds.YU07A, StartLineId = 29, EndLineId = 33},
@@ -591,6 +607,10 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU07B, StartLineId = 118, EndLineId = 119},
     },
     {
+        {ScriptId = scriptIds.YU07A, LineId = 114},
+        {ScriptId = scriptIds.YU07B, LineId = 121},
+    },
+    {
         {ScriptId = scriptIds.YU07A, LineId = 116},
         {ScriptId = scriptIds.YU07B, LineId = 123},
     },
@@ -603,8 +623,12 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU07B, StartLineId = 128, EndLineId = 136},
     },
     {
-        {ScriptId = scriptIds.YU07A, StartLineId = 132, EndLineId = 146},
-        {ScriptId = scriptIds.YU07B, StartLineId = 140, EndLineId = 154},
+        {ScriptId = scriptIds.YU07A, StartLineId = 132, EndLineId = 141},
+        {ScriptId = scriptIds.YU07B, StartLineId = 140, EndLineId = 149},
+    },
+    {
+        {ScriptId = scriptIds.YU07A, StartLineId = 143, EndLineId = 146},
+        {ScriptId = scriptIds.YU07B, StartLineId = 151, EndLineId = 154},
     },
     {
         {ScriptId = scriptIds.YU07A, StartLineId = 148, EndLineId = 152},
@@ -627,24 +651,32 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU07B, StartLineId = 189, EndLineId = 206},
     },
     {
-        {ScriptId = scriptIds.YU08A, StartLineId = 0, EndLineId = 26},
-        {ScriptId = scriptIds.YU08B, StartLineId = 0, EndLineId = 26},
+        {ScriptId = scriptIds.YU08A, StartLineId = 0, EndLineId = 25},
+        {ScriptId = scriptIds.YU08B, StartLineId = 0, EndLineId = 25},
     },
     {
-        {ScriptId = scriptIds.YU08A, StartLineId = 28, EndLineId = 30},
-        {ScriptId = scriptIds.YU08B, StartLineId = 28, EndLineId = 30},
+        {ScriptId = scriptIds.YU08A, LineId = 28},
+        {ScriptId = scriptIds.YU08B, LineId = 28},
+    },
+    {
+        {ScriptId = scriptIds.YU08A, LineId = 30},
+        {ScriptId = scriptIds.YU08B, LineId = 30},
     },
     {
         {ScriptId = scriptIds.YU08A, LineId = 32},
         {ScriptId = scriptIds.YU08B, LineId = 32},
     },
     {
-        {ScriptId = scriptIds.YU08A, StartLineId = 34, EndLineId = 54},
-        {ScriptId = scriptIds.YU08B, StartLineId = 33, EndLineId = 53},
+        {ScriptId = scriptIds.YU08A, StartLineId = 34, EndLineId = 35},
+        {ScriptId = scriptIds.YU08B, StartLineId = 33, EndLineId = 34},
     },
     {
-        {ScriptId = scriptIds.YU08A, StartLineId = 57, EndLineId = 62},
-        {ScriptId = scriptIds.YU08B, StartLineId = 56, EndLineId = 61},
+        {ScriptId = scriptIds.YU08A, StartLineId = 37, EndLineId = 54},
+        {ScriptId = scriptIds.YU08B, StartLineId = 36, EndLineId = 53},
+    },
+    {
+        {ScriptId = scriptIds.YU08A, StartLineId = 58, EndLineId = 62},
+        {ScriptId = scriptIds.YU08B, StartLineId = 57, EndLineId = 61},
     },
     {
         {ScriptId = scriptIds.YU08A, LineId = 64},
@@ -667,8 +699,12 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU08B, LineId = 74},
     },
     {
-        {ScriptId = scriptIds.YU08A, StartLineId = 77, EndLineId = 83},
-        {ScriptId = scriptIds.YU08B, StartLineId = 76, EndLineId = 82},
+        {ScriptId = scriptIds.YU08A, LineId = 77},
+        {ScriptId = scriptIds.YU08B, LineId = 76},
+    },
+    {
+        {ScriptId = scriptIds.YU08A, StartLineId = 79, EndLineId = 83},
+        {ScriptId = scriptIds.YU08B, StartLineId = 78, EndLineId = 82},
     },
     {
         {ScriptId = scriptIds.YU09A, StartLineId = 0, EndLineId = 9},
@@ -683,8 +719,12 @@ root.SaveData.EquivalentLines = {
         {ScriptId = scriptIds.YU09B, LineId = 13},
     },
     {
-        {ScriptId = scriptIds.YU09A, StartLineId = 16, EndLineId = 20},
-        {ScriptId = scriptIds.YU09B, StartLineId = 16, EndLineId = 20},
+        {ScriptId = scriptIds.YU09A, StartLineId = 16, EndLineId = 18},
+        {ScriptId = scriptIds.YU09B, StartLineId = 16, EndLineId = 18},
+    },
+    {
+        {ScriptId = scriptIds.YU09A, LineId = 20},
+        {ScriptId = scriptIds.YU09B, LineId = 20},
     },
     {
         {ScriptId = scriptIds.YU09A, LineId = 28},
@@ -717,9 +757,5 @@ root.SaveData.EquivalentLines = {
     {
         {ScriptId = scriptIds.YU09A, StartLineId = 54, EndLineId = 58},
         {ScriptId = scriptIds.YU09B, StartLineId = 56, EndLineId = 60},
-    },
-    {
-        {ScriptId = scriptIds.YU09A, LineId = 61},
-        {ScriptId = scriptIds.YU09B, LineId = 66},
     },
 };
