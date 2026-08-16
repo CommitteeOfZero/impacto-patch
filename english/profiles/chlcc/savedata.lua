@@ -5,3 +5,5 @@ root.SaveData.AddedLinesData = {
     BitFieldOffset = 0x5500;
     AddedLinesPerScript = 500;
 };
+
+include(root.BasePaths.RootPatchesDir .. "/english/profiles/chlcc/equivalentlines.lua");
