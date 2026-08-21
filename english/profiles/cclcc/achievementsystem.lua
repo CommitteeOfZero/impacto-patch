@@ -12,7 +12,7 @@ local achievements = {
     { Name = "The Mille-Feuille Duo", Description = "Reached Yui & Yuto’s ending.", Hidden = true, Rarity = AchievementRarity.Silver },
     { Name = "About Love or Romance", Description = "Reached Onoe Serika’s ending.", Hidden = true, Rarity = AchievementRarity.Gold },
     { Name = "Onoe Serika’s Dream", Description = "Reached the epilogue.", Hidden = true, Rarity = AchievementRarity.Gold },
-    { Name = "My First Delusion Trigger", Description = "Didn’t get scared, and pulled a Delusion Trigger.", Hidden = false, Rarity = AchievementRarity.Bronze },
+    { Name = "My First Delusion Trigger", Description = "Didn’t get scared and pulled a Delusion Trigger.", Hidden = false, Rarity = AchievementRarity.Bronze },
     { Name = "A Positive Person (Fourth Time)", Description = "Witnessed every positive delusion.", Hidden = false, Rarity = AchievementRarity.Silver },
     { Name = "A Negative Person (Fourth Time)", Description = "Witnessed every negative delusion.", Hidden = false, Rarity = AchievementRarity.Silver },
     { Name = "Gigalomaniac", Description = "Pulled every Delusion Trigger.", Hidden = false, Rarity = AchievementRarity.Gold },

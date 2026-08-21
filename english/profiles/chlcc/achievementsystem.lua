@@ -46,7 +46,7 @@ local achievements = {
     { Name = "75% Chu☆Chu!", Description = "Witnessed 75% of CGs.", Hidden = false, Rarity = AchievementRarity.Silver },
     { Name = "100% Chu☆Chu!", Description = "Witnessed every CG.", Hidden = false, Rarity = AchievementRarity.Silver },
     { Name = "Finishing without Chu☆Chu!", Description = "Reached an ending without getting distracted by a single delusion.", Hidden = false, Rarity = AchievementRarity.Silver },
-    { Name = "My First Delusion Trigger", Description = "Didn’t get scared, and pulled a Delusion Trigger☆", Hidden = true, Rarity = AchievementRarity.Bronze },
+    { Name = "My First Delusion Trigger", Description = "Didn’t get scared and pulled a Delusion Trigger☆", Hidden = true, Rarity = AchievementRarity.Bronze },
     { Name = "Chu☆Chu! Speedrun King", Description = "Read the text sometimes, will ya?", Hidden = true, Rarity = AchievementRarity.Bronze },
     { Name = "Gotta Love Glasses (Second Time)", Description = "Showed interest in a kind, older girl.", Hidden = true, Rarity = AchievementRarity.Bronze },
     { Name = "Tips☆100%", Description = "Read every tip.", Hidden = false, Rarity = AchievementRarity.Gold },
