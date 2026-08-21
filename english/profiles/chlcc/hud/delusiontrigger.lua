@@ -1073,15 +1073,3 @@ if (root.Patch.HasDelusionMouseSupport) then
     Bounds = { X = 1115, Y = 279, Width = 158, Height = 147 }
   }
 end
-
-if (root.Patch.HasDelusionMouseSupport) then
-  root.Sprites["LeftDelusionHeartSprite"] = {
-    Sheet = "DelusionHeart",
-    Bounds = { X = 7, Y = 279, Width = 158, Height = 147 }
-  }
-
-  root.Sprites["RightDelusionHeartSprite"] = {
-    Sheet = "DelusionHeart",
-    Bounds = { X = 1115, Y = 279, Width = 158, Height = 147 }
-  }
-end
