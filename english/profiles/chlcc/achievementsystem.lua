@@ -61,4 +61,5 @@ root.AchievementData = {
     Type = AchievementDataType.Common,
     AchievementSystem = root.BasePaths.RootSavesDir .. "/chlcc/eng/ACHIEVEMENT.DAT",
     Achievements = achievements,
+    LockedIconPath = iconDir .. "/TROPHIDDEN.PNG",
 };
