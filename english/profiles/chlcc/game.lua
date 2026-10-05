@@ -1,4 +1,5 @@
 include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/subtitle.lua');
+include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/achievementsystem.lua');
 include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/dialogue.lua');
 include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/sprites.lua');
 include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/tipssystem.lua');

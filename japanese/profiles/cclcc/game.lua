@@ -1,0 +1,1 @@
+include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/cclcc/achievementsystem.lua');
