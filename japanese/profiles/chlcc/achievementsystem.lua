@@ -52,14 +52,14 @@ local achievements = {
     { Name = "Tips☆１００％", Description = "すべてのＴＩＰＳを見た", Hidden = false, Rarity = AchievementRarity.Gold },
 };
 
-local iconDir = root.BasePaths.RootPatchesDir .. "/english/gamedata/chlcc/achievements";
+local iconDir = root.BasePaths.RootPatchesDir .. "/japanese/gamedata/chlcc/achievements";
 for i, achievement in ipairs(achievements) do
     achievement.IconPath = string.format(iconDir .. "/TROP%03d.PNG", i - 1);
 end
 
 root.AchievementData = {
     Type = AchievementDataType.Common,
-    AchievementSystem = root.BasePaths.RootSavesDir .. "/chlcc/eng/ACHIEVEMENT.DAT",
+    AchievementSystem = root.BasePaths.RootSavesDir .. "/chlcc/jpn/ACHIEVEMENT.DAT",
     Achievements = achievements,
     LockedIconPath = iconDir .. "/TROPLOCK.PNG",
 };
