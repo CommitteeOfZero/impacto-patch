@@ -46,8 +46,8 @@ class ArgumentParser:
         )
 
         self._parser.add_argument(
-            "--clean", "-c",
-            help = "Perform a clean build (destroy prior build artifacts first)",
+            "--clean-script", "-c",
+            help = "Perform a clean script build",
             action = "store_true",
             default = False
         )
@@ -96,7 +96,7 @@ def get_patch_root(patch: str) -> Path:
     return Path(__file__) / ".." / ".." / "patches" / patch
 
 
-def build_script(script_info: Dict, config: Dict) -> Path:
+def build_script(script_info: Dict, config: Dict, clean: bool) -> Path:
     python_command = config["paths"]["tools"]["python"]
     coalesc3_path = Path(config["paths"]["tools"]["coalesc3"])
 
@@ -104,15 +104,18 @@ def build_script(script_info: Dict, config: Dict) -> Path:
     platform = script_info["platform"]
     language = script_info["language"]
 
+    args = [
+        python_command,
+        coalesc3_path,
+        game,
+        platform,
+        language,
+    ]
+    if clean:
+        args += ["--clean"]
+
     process = subprocess.run(
-        args = [
-            python_command,
-            coalesc3_path,
-            game,
-            platform,
-            language,
-            "--clean"
-        ],
+        args = args,
         cwd = coalesc3_path.parent
     )
 
@@ -175,7 +178,7 @@ def package_patch(patch: str, game: str, args: argparse.Namespace, config: Dict,
         os.remove(archive_path)
     with zipfile.ZipFile(archive_path, 'x') as archive_file:
         if "script" in assets_info.keys():
-            script_path = build_script(assets_info["script"], config)
+            script_path = build_script(assets_info["script"], config, args.clean_script)
             copy_directory(script_path, Path("gamedata") / script_path.name, archive_file)
 
         copy_assets(asset_path_root, archive_file, assets_info["gamedata"])
