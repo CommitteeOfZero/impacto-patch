@@ -16,5 +16,5 @@
 
 *.zip
 
-/out/
+**/out/
 /scripts/config.json
