@@ -5,8 +5,8 @@ root.SystemMenu.MenuButtonGuide = {
     Sprite = "SystemMenuButtonGuide",
     Icons = {
         { Key = "Directional", X = 66, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 281, Y = 8.5 },
-        { Key = root.PADinput.PAD1B, X = 533, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 282, Y = 8.5 },
+        { Key = root.PADinput.PAD1B, X = 535, Y = 8.5 },
     }
 };
 root.Sprites.SystemMenuButtonGuide = {
@@ -18,8 +18,8 @@ root.OptionsMenu.GuideSprite = {
     Sprite = "OptionsGuide",
     Icons = {
         { Key = "Directional",       X = 66,  Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 281, Y = 8.5 },
-        { Key = root.PADinput.PAD1X, X = 533, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 282, Y = 8.5 },
+        { Key = root.PADinput.PAD1X, X = 535, Y = 8.5 },
         { Key = root.PADinput.PAD1B, X = 751, Y = 8.5 },
     }
 };
@@ -32,9 +32,9 @@ root.OptionsMenu.VoiceGuideSprite = {
     Sprite = "OptionsVoiceGuide",
     Icons = {
         { Key = "Directional",       X = 66, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 281, Y = 8.5 },
-        { Key = root.PADinput.PAD1X, X = 533, Y = 8.5 },
-        { Key = root.PADinput.PAD1Y, X = 751, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 282, Y = 8.5 },
+        { Key = root.PADinput.PAD1X, X = 535, Y = 8.5 },
+        { Key = root.PADinput.PAD1Y, X = 749, Y = 8.5 },
         { Key = root.PADinput.PAD1B, X = 1075, Y = 8.5 },
     }
 };
@@ -58,9 +58,9 @@ root.ExtraMenus.LibraryMenu.AlbumMenuGuideSprite = {
     Sprite = "AlbumMenuGuide",
     Icons = {
         { Key = "Directional",        X = 66, Y = 8.5 },
-        { Key = root.PADinput.PAD1A,  X = 281, Y = 8.5 },
-        { Key = root.PADinput.PAD1L1, X = 540, Y = 8.5 },
-        { Key = root.PADinput.PAD1R2, X = 567, Y = 8.5 },
+        { Key = root.PADinput.PAD1A,  X = 282, Y = 8.5 },
+        { Key = root.PADinput.PAD1L1, X = 542, Y = 8.5 },
+        { Key = root.PADinput.PAD1R2, X = 570, Y = 8.5 },
         { Key = root.PADinput.PAD1B,  X = 931, Y = 8.5 },
     }
 };
@@ -73,11 +73,11 @@ root.ExtraMenus.LibraryMenu.AlbumMenuCGViewerGuideSprite = {
     Sprite = "AlbumMenuCGViewerGuide",
     Icons = {
         { Key = "Directional",        X = 66, Y = 8.5 },
-        { Key = root.PADinput.PAD1A,  X = 281, Y = 8.5 },
-        { Key = root.PADinput.PAD1Y,  X = 533, Y = 8.5 },
+        { Key = root.PADinput.PAD1A,  X = 283, Y = 8.5 },
+        { Key = root.PADinput.PAD1Y,  X = 535, Y = 8.5 },
         { Key = root.PADinput.PAD1L2, X = 901, Y = 8.5 },
         { Key = root.PADinput.PAD1R2, X = 929, Y = 8.5 },
-        { Key = root.PADinput.PAD1B,  X = 1182, Y = 8.5 },
+        { Key = root.PADinput.PAD1B,  X = 1183, Y = 8.5 },
     }
 };
 root.Sprites.AlbumMenuCGViewerGuide = {
@@ -89,10 +89,10 @@ root.ExtraMenus.LibraryMenu.MusicMenuGuideSprite = {
     Sprite = "MusicMenuGuide",
     Icons = {
         { Key = "Directional",       X = 66, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 281, Y = 8.5 },
-        { Key = root.PADinput.PAD1Y, X = 533, Y = 8.5 },
-        { Key = root.PADinput.PAD1X, X = 748, Y = 8.5 },
-        { Key = root.PADinput.PAD1B, X = 1182, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 283, Y = 8.5 },
+        { Key = root.PADinput.PAD1Y, X = 534, Y = 8.5 },
+        { Key = root.PADinput.PAD1X, X = 750, Y = 8.5 },
+        { Key = root.PADinput.PAD1B, X = 1183, Y = 8.5 },
     }
 };
 root.Sprites.MusicMenuGuide = {
@@ -104,8 +104,8 @@ root.ExtraMenus.LibraryMenu.MovieMenuGuideSprite = {
     Sprite = "MovieMenuGuide",
     Icons = {
         { Key = "Directional",       X = 66, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 281, Y = 8.5 },
-        { Key = root.PADinput.PAD1Y, X = 533, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 282, Y = 8.5 },
+        { Key = root.PADinput.PAD1Y, X = 535, Y = 8.5 },
         { Key = root.PADinput.PAD1B, X = 751, Y = 8.5 },
     }
 };
@@ -118,11 +118,11 @@ root.TipsMenu.TipsGuideSprite = {
     Sprite = "TipsGuide",
     Icons = {
         { Key = "Directional",        X = 66, Y = 8.5 },
-        { Key = root.PADinput.PAD1A,  X = 281, Y = 8.5 },
-        { Key = "Scroll",             X = 533, Y = 8.5 },
+        { Key = root.PADinput.PAD1A,  X = 282, Y = 8.5 },
+        { Key = "Scroll",             X = 534, Y = 8.5 },
         { Key = root.PADinput.PAD1L1, X = 758, Y = 8.5 },
         { Key = root.PADinput.PAD1R1, X = 786, Y = 8.5 },
-        { Key = root.PADinput.PAD1B,  X = 1108, Y = 8.5 },
+        { Key = root.PADinput.PAD1B,  X = 1111, Y = 8.5 },
     }
 };
 root.Sprites.TipsGuide = {
@@ -134,8 +134,8 @@ root.BacklogMenu.BacklogControlsSprite = {
     Sprite = "BacklogControls",
     Icons = {
         { Key = "Directional",       X = 66, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 281, Y = 8.5 },
-        { Key = root.PADinput.PAD1B, X = 607, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 283, Y = 8.5 },
+        { Key = root.PADinput.PAD1B, X = 571, Y = 8.5 },
     }
 };
 root.Sprites.BacklogControls = {
@@ -148,8 +148,8 @@ for i, menuType in ipairs({ "QuickLoad", "Save", "Load" }) do
         Sprite = menuType .. "ButtonGuide",
         Icons = {
             { Key = "Directional",       X = 66, Y = 8.5 },
-            { Key = root.PADinput.PAD1A, X = 281, Y = 8.5 },
-            { Key = root.PADinput.PAD1Y, X = 533, Y = 8.5 },
+            { Key = root.PADinput.PAD1A, X = 282, Y = 8.5 },
+            { Key = root.PADinput.PAD1Y, X = 535, Y = 8.5 },
             { Key = root.PADinput.PAD1B, X = 823, Y = 8.5 },
         }
     };
@@ -174,7 +174,7 @@ root.GameSpecific.UIButtonGuideSprites[2] = {
     Sprite = "UIButtonGuide0",
     Icons = {
         { Key = "Directional", X = 66, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 281, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 282, Y = 8.5 },
     }
 };
 root.Sprites["UIButtonGuide0"] = {

@@ -4,23 +4,23 @@ UpdateButtonSpriteScale( { X = 0.5, Y = 0.5 } );
 root.SystemMenu.MenuButtonGuide = {
     Sprite = "SystemMenuButtonGuide",
     Icons = {
-        { Key = "Directional", X = 69, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 266, Y = 8.5 },
-        { Key = root.PADinput.PAD1B, X = 392, Y = 8.5 },
+        { Key = "Directional", X = 66, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 262, Y = 8.5 },
+        { Key = root.PADinput.PAD1B, X = 388, Y = 8.5 },
     }
 };
 root.Sprites.SystemMenuButtonGuide = {
     Sheet = "GuideSpritesNoIcons",
-    Bounds = {X = 4, Y = 5, Width = 1926, Height = 57}
+    Bounds = {X = 4, Y = 872, Width = 1926, Height = 57}
 };
 
 root.OptionsMenu.GuideSprite = {
     Sprite = "OptionsGuide",
     Icons = {
-        { Key = "Directional", X = 69, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 266, Y = 8.5 },
-        { Key = root.PADinput.PAD1X, X = 392, Y = 8.5 },
-        { Key = root.PADinput.PAD1B, X = 633, Y = 8.5 },
+        { Key = "Directional", X = 66, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 262, Y = 8.5 },
+        { Key = root.PADinput.PAD1X, X = 387, Y = 8.5 },
+        { Key = root.PADinput.PAD1B, X = 630, Y = 8.5 },
     }
 };
 root.Sprites.OptionsGuide = {
@@ -31,11 +31,11 @@ root.Sprites.OptionsGuide = {
 root.OptionsMenu.VoiceGuideSprite = {
     Sprite = "OptionsVoiceGuide",
     Icons = {
-        { Key = "Directional", X = 69, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 266, Y = 8.5 },
-        { Key = root.PADinput.PAD1X, X = 392, Y = 8.5 },
-        { Key = root.PADinput.PAD1Y, X = 633, Y = 8.5 },
-        { Key = root.PADinput.PAD1B, X = 991, Y = 8.5 },
+        { Key = "Directional", X = 66, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 262, Y = 8.5 },
+        { Key = root.PADinput.PAD1X, X = 387, Y = 8.5 },
+        { Key = root.PADinput.PAD1Y, X = 630, Y = 8.5 },
+        { Key = root.PADinput.PAD1B, X = 988, Y = 8.5 },
     }
 };
 root.Sprites.OptionsVoiceGuide = {
@@ -46,7 +46,7 @@ root.Sprites.OptionsVoiceGuide = {
 root.ExtraMenus.ClearListMenu.ClearListGuideSprite = {
     Sprite = "ClearListGuide",
     Icons = {
-        { Key = root.PADinput.PAD1B, X = 69, Y = 8.5 },
+        { Key = root.PADinput.PAD1B, X = 66, Y = 8.5 },
     }
 };
 root.Sprites.ClearListGuide = {
@@ -57,11 +57,11 @@ root.Sprites.ClearListGuide = {
 root.ExtraMenus.LibraryMenu.AlbumMenuGuideSprite = {
     Sprite = "AlbumMenuGuide",
     Icons = {
-        { Key = "Directional", X = 69, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 266, Y = 8.5 },
-        { Key = root.PADinput.PAD1L1, X = 392, Y = 8.5 },
-        { Key = root.PADinput.PAD1R2, X = 420, Y = 8.5 },
-        { Key = root.PADinput.PAD1B, X = 665, Y = 8.5 },
+        { Key = "Directional", X = 66, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 262, Y = 8.5 },
+        { Key = root.PADinput.PAD1L1, X = 390, Y = 8.5 },
+        { Key = root.PADinput.PAD1R2, X = 418, Y = 8.5 },
+        { Key = root.PADinput.PAD1B, X = 662, Y = 8.5 },
     }
 };
 root.Sprites.AlbumMenuGuide = {
@@ -72,12 +72,12 @@ root.Sprites.AlbumMenuGuide = {
 root.ExtraMenus.LibraryMenu.AlbumMenuCGViewerGuideSprite = {
     Sprite = "AlbumMenuCGViewerGuide",
     Icons = {
-        { Key = "Directional", X = 69, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 312, Y = 8.5 },
-        { Key = root.PADinput.PAD1Y, X = 480, Y = 8.5 },
-        { Key = root.PADinput.PAD1L2, X = 748, Y = 8.5 },
-        { Key = root.PADinput.PAD1R2, X = 776, Y = 8.5 },
-        { Key = root.PADinput.PAD1B, X = 926, Y = 8.5 },
+        { Key = "Directional", X = 66, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 309, Y = 8.5 },
+        { Key = root.PADinput.PAD1Y, X = 477, Y = 8.5 },
+        { Key = root.PADinput.PAD1L2, X = 747, Y = 8.5 },
+        { Key = root.PADinput.PAD1R2, X = 775, Y = 8.5 },
+        { Key = root.PADinput.PAD1B, X = 923, Y = 8.5 },
     }
 };
 root.Sprites.AlbumMenuCGViewerGuide = {
@@ -88,11 +88,11 @@ root.Sprites.AlbumMenuCGViewerGuide = {
 root.ExtraMenus.LibraryMenu.MusicMenuGuideSprite = {
     Sprite = "MusicMenuGuide",
     Icons = {
-        { Key = "Directional", X = 69, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 266, Y = 8.5 },
-        { Key = root.PADinput.PAD1Y, X = 392, Y = 8.5 },
-        { Key = root.PADinput.PAD1X, X = 516, Y = 8.5 },
-        { Key = root.PADinput.PAD1B, X = 784, Y = 8.5 },
+        { Key = "Directional", X = 66, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 263, Y = 8.5 },
+        { Key = root.PADinput.PAD1Y, X = 388, Y = 8.5 },
+        { Key = root.PADinput.PAD1X, X = 513, Y = 8.5 },
+        { Key = root.PADinput.PAD1B, X = 781, Y = 8.5 },
     }
 };
 root.Sprites.MusicMenuGuide = {
@@ -103,9 +103,10 @@ root.Sprites.MusicMenuGuide = {
 root.ExtraMenus.LibraryMenu.MovieMenuGuideSprite = {
     Sprite = "MovieMenuGuide",
     Icons = {
-        { Key = "Directional", X = 69, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 266, Y = 8.5 },
-        { Key = root.PADinput.PAD1B, X = 392, Y = 8.5 },
+        { Key = "Directional", X = 66, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 262, Y = 8.5 },
+        { Key = root.PADinput.PAD1X, X = 387, Y = 8.5 },
+        { Key = root.PADinput.PAD1B, X = 558, Y = 8.5 },
     }
 };
 root.Sprites.MovieMenuGuide = {
@@ -116,12 +117,12 @@ root.Sprites.MovieMenuGuide = {
 root.TipsMenu.TipsGuideSprite = {
     Sprite = "TipsGuide",
     Icons = {
-        { Key = "Directional", X = 69, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 266, Y = 8.5 },
+        { Key = "Directional", X = 66, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 262, Y = 8.5 },
         { Key = "Scroll", X = 392, Y = 8.5 },
-        { Key = root.PADinput.PAD1L1, X = 687, Y = 8.5 },
-        { Key = root.PADinput.PAD1R1, X = 715, Y = 8.5 },
-        { Key = root.PADinput.PAD1B, X = 958, Y = 8.5 },
+        { Key = root.PADinput.PAD1L1, X = 685, Y = 8.5 },
+        { Key = root.PADinput.PAD1R1, X = 713, Y = 8.5 },
+        { Key = root.PADinput.PAD1B, X = 955, Y = 8.5 },
     }
 };
 root.Sprites.TipsGuide = {
@@ -132,9 +133,9 @@ root.Sprites.TipsGuide = {
 root.BacklogMenu.BacklogControlsSprite = {
     Sprite = "BacklogControls",
     Icons = {
-        { Key = "Directional", X = 69, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 266, Y = 8.5 },
-        { Key = root.PADinput.PAD1B, X = 465, Y = 8.5 },
+        { Key = "Directional", X = 68, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 265, Y = 8.5 },
+        { Key = root.PADinput.PAD1B, X = 462, Y = 8.5 },
     }
 };
 root.Sprites.BacklogControls = {
@@ -146,10 +147,10 @@ for i, menuType in ipairs({ "QuickLoad", "Save", "Load" }) do
     root.SaveMenu[menuType .. "ButtonGuideSprite"] = {
         Sprite = menuType .. "ButtonGuide",
         Icons = {
-            { Key = "Directional", X = 69, Y = 8.5 },
-            { Key = root.PADinput.PAD1A, X = 266, Y = 8.5 },
-            { Key = root.PADinput.PAD1Y, X = 392, Y = 8.5 },
-            { Key = root.PADinput.PAD1B, X = 608, Y = 8.5 },
+            { Key = "Directional", X = 66, Y = 8.5 },
+            { Key = root.PADinput.PAD1A, X = 262, Y = 8.5 },
+            { Key = root.PADinput.PAD1Y, X = 387, Y = 8.5 },
+            { Key = root.PADinput.PAD1B, X = 605, Y = 8.5 },
         }
     };
     root.Sprites[menuType .. "ButtonGuide"] = {
@@ -161,7 +162,7 @@ end
 root.GameSpecific.UIButtonGuideSprites[1] = {
     Sprite = "UIButtonGuide1",
     Icons = {
-        { Key = "Directional", X = 69, Y = 8.5 },
+        { Key = "Directional", X = 63, Y = 8.5 },
     }
 };
 root.Sprites["UIButtonGuide1"] = {
@@ -172,8 +173,8 @@ root.Sprites["UIButtonGuide1"] = {
 root.GameSpecific.UIButtonGuideSprites[2] = {
     Sprite = "UIButtonGuide0",
     Icons = {
-        { Key = "Directional", X = 69, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 266, Y = 8.5 },
+        { Key = "Directional", X = 64, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 260, Y = 8.5 },
     }
 };
 root.Sprites["UIButtonGuide0"] = {
