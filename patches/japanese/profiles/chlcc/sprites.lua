@@ -8,3 +8,9 @@ if root.Patch.HasDelusionMouseSupport then
         DesignHeight = 720
     }
 end
+
+root.SpriteSheets["GuideSpritesNoIcons"] = {
+    Path = { Mount = "system", Id = 27 },
+    DesignWidth = 2048,
+    DesignHeight = 538,
+}

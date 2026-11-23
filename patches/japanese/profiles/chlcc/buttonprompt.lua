@@ -1,11 +1,5 @@
 UpdateButtonSpriteScale({ X = 3 / 8, Y = 3 / 8 });
 
-root.SpriteSheets["GuideSpritesNoIcons"] = {
-    Path = { Mount = "system", Id = 27 },
-    DesignWidth = 2048,
-    DesignHeight = 538
-}
-
 local guideSpriteScale = 2 / 3
 
 root.SystemMenu.SystemMenuButtonPrompt = {
@@ -89,36 +83,24 @@ root.ExtraMenus.AlbumMenu.CgViewerButtonGuideVariation = {
         { Key = root.PADinput.PAD1X, X = 829 * guideSpriteScale,  Y = 4 * guideSpriteScale },
         { Key = root.PADinput.PAD1Y, X = 871 * guideSpriteScale,  Y = 4 * guideSpriteScale },
         { Key = root.PADinput.PAD1B, X = 1035 * guideSpriteScale, Y = 4 * guideSpriteScale },
-        { Key = root.PADinput.PAD1A, X = 1267 * guideSpriteScale, Y = 4 * guideSpriteScale },
     }
 }
 root.Sprites.CgViewerButtonGuideVariation = {
     Sheet = "GuideSpritesNoIcons",
-    Bounds = { X = 2, Y = 50, Width = 1460, Height = 44 },
+    Bounds = { X = 2, Y = 50, Width = 1228, Height = 44 },
     BaseScale = { X = guideSpriteScale, Y = guideSpriteScale }
 }
 
-root.ExtraMenus.AlbumMenu.CgViewerButtonGuideNoVariation = {
-    Sprite = "CgViewerButtonGuideNoVariation",
-    Icons = {
-        { Key = "Directional",       X = 34 * guideSpriteScale,  Y = 4 * guideSpriteScale },
-        { Key = root.PADinput.PAD1A, X = 258 * guideSpriteScale, Y = 4 * guideSpriteScale },
-        { Key = root.PADinput.PAD1B, X = 392 * guideSpriteScale, Y = 4 * guideSpriteScale },
-    }
-}
-root.Sprites.CgViewerButtonGuideNoVariation = {
-    Sheet = "GuideSpritesNoIcons",
-    Bounds = { X = 2, Y = 197, Width = 1015, Height = 44 },
-    BaseScale = { X = guideSpriteScale, Y = guideSpriteScale }
-}
+root.ExtraMenus.AlbumMenu.CgViewerButtonGuideNoVariation = root.ExtraMenus.AlbumMenu.CgViewerButtonGuideVariation;
+root.Sprites.CgViewerButtonGuideNoVariation = root.Sprites.CgViewerButtonGuideVariation;
 
 root.ExtraMenus.MusicMenu.ButtonPromptSprite = {
     Sprite = "MusicButtonPrompt",
     Icons = {
         { Key = "Directional",       X = 34 * guideSpriteScale,   Y = 4 * guideSpriteScale },
-        { Key = root.PADinput.PAD1A, X = 258 * guideSpriteScale, Y = 4 * guideSpriteScale },
+        { Key = root.PADinput.PAD1A, X = 257 * guideSpriteScale, Y = 4 * guideSpriteScale },
         { Key = root.PADinput.PAD1X, X = 391 * guideSpriteScale, Y = 4 * guideSpriteScale },
-        { Key = root.PADinput.PAD1Y, X = 524 * guideSpriteScale, Y = 4 * guideSpriteScale },
+        { Key = root.PADinput.PAD1Y, X = 523 * guideSpriteScale, Y = 4 * guideSpriteScale },
         { Key = root.PADinput.PAD1B, X = 841 * guideSpriteScale, Y = 4 * guideSpriteScale },
     }
 }
@@ -132,8 +114,8 @@ root.ExtraMenus.MovieMenu.MovieButtonExtraPrompt = {
     Sprite = "MovieButtonExtraPrompt",
     Icons = {
         { Key = "Directional",       X = 34 * guideSpriteScale,  Y = 4 * guideSpriteScale },
-        { Key = root.PADinput.PAD1A, X = 258 * guideSpriteScale, Y = 4 * guideSpriteScale },
-        { Key = root.PADinput.PAD1Y, X = 392 * guideSpriteScale, Y = 4 * guideSpriteScale },
+        { Key = root.PADinput.PAD1A, X = 257 * guideSpriteScale, Y = 4 * guideSpriteScale },
+        { Key = root.PADinput.PAD1Y, X = 391 * guideSpriteScale, Y = 4 * guideSpriteScale },
         { Key = root.PADinput.PAD1B, X = 579 * guideSpriteScale, Y = 4 * guideSpriteScale },
     }
 }
@@ -148,7 +130,7 @@ root.TipsMenu.ButtonPromptSprite = {
     Icons = {
         { Key = "ArrowUpDown",       X = 34 * guideSpriteScale,   Y = 4 * guideSpriteScale },
         { Key = root.PADinput.PAD1A, X = 258 * guideSpriteScale,  Y = 4 * guideSpriteScale },
-        { Key = root.PADinput.PAD1X, X = 544 * guideSpriteScale,  Y = 4 * guideSpriteScale },
+        { Key = root.PADinput.PAD1X, X = 543 * guideSpriteScale,  Y = 4 * guideSpriteScale },
         { Key = "ArrowLeftRight", X = 965 * guideSpriteScale, Y = 4 * guideSpriteScale },
         { Key = root.PADinput.PAD1B, X = 1249 * guideSpriteScale, Y = 4 * guideSpriteScale },
     }
@@ -188,19 +170,15 @@ root.Sprites.SaveButtonPrompt = {
     BaseScale = { X = guideSpriteScale, Y = guideSpriteScale }
 }
 
-local function rightAlignedX(spriteName)
-    local sprite = root.Sprites[spriteName]
-    return root.DesignWidth - sprite.Bounds.Width * sprite.BaseScale.X
-end
-
-root.SystemMenu.SystemMenuButtonPromptPosition.X = 1050;
-root.OptionsMenu.ButtonPromptPosition.X = 525;
-root.ExtraMenus.AlbumMenu.ButtonGuidePos.X = 700;
-root.ExtraMenus.AlbumMenu.CgViewerButtonGuidePos.X = 490;
-root.ExtraMenus.AlbumMenu.CgViewerButtonGuideNoVariationPos.X = 920;
-root.ExtraMenus.ClearListMenu.ButtonPromptPosition.X = 1180;
-root.ExtraMenus.MusicMenu.ButtonPromptPosition.X = 640;
-root.ExtraMenus.MovieMenu.MovieButtonExtraPromptPosition.X = 800;
+root.SystemMenu.SystemMenuButtonPromptPosition.X = 1029;
+root.TrophyMenu.ButtonPromptPosition.X = 1029;
+root.OptionsMenu.ButtonPromptPosition.X = 533;
+root.ExtraMenus.AlbumMenu.ButtonGuidePos.X = 723;
+root.ExtraMenus.AlbumMenu.CgViewerButtonGuidePos.X = 512;
+root.ExtraMenus.AlbumMenu.CgViewerButtonGuideNoVariationPos.X = root.ExtraMenus.AlbumMenu.CgViewerButtonGuidePos.X
+root.ExtraMenus.ClearListMenu.ButtonPromptPosition.X = 1179;
+root.ExtraMenus.MusicMenu.ButtonPromptPosition.X = 642;
+root.ExtraMenus.MovieMenu.MovieButtonExtraPromptPosition.X = 817;
 root.TipsMenu.ButtonPromptPosition.X = 370;
-root.BacklogMenu.ButtonPromptPosition.X = 875;
-root.SaveMenu.ButtonPromptPosition.X = 753;
+root.BacklogMenu.ButtonPromptPosition.X = 881;
+root.SaveMenu.ButtonPromptPosition.X = 773;
