@@ -1,8 +1,8 @@
 root.Patch = {
   HasScriptedExitLogic = true,
   CloseBacklogWhenReachedEnd = true,
-  DateFormat = DateFormatType.MDY,
+  DateFormat = DateFormatType.YMD,
   HasDelusionMouseSupport = true,
 }
 
-include(root.BasePaths.RootPatchesDir .. "/english/profiles/cclcc/game.lua") 
+include(root.BasePaths.RootPatchesDir .. "/japanese/profiles/cclcc/game.lua") 

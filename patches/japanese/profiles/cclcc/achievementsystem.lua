@@ -25,7 +25,7 @@ local achievements = {
     { Name = "Soundコンプリート", Description = "全てのSoundを聴いた", Hidden = false, Rarity = AchievementRarity.Gold },
 };
 
-local iconDir = root.BasePaths.RootPatchesDir .. "/english/gamedata/cclcc/achievements";
+local iconDir = root.BasePaths.RootPatchesDir .. "/japanese/gamedata/cclcc/achievements";
 for i, achievement in ipairs(achievements) do
     achievement.IconPath = string.format(iconDir .. "/TROP%03d.PNG", i - 1);
 end
@@ -34,7 +34,7 @@ table.insert(achievements, table.remove(achievements, 1));
 
 root.AchievementData = {
     Type = AchievementDataType.Common,
-    AchievementSystem = root.BasePaths.RootSavesDir .. "/cclcc/eng/ACHIEVEMENT.DAT",
+    AchievementSystem = root.BasePaths.RootSavesDir .. "/cclcc/jpn/ACHIEVEMENT.DAT",
     Achievements = achievements,
     LockedIconPath = iconDir .. "/TROPLOCK.PNG",
 };
