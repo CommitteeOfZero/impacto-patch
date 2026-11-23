@@ -106,6 +106,11 @@ def copy_assets(source_root: Path, archive_file: zipfile.ZipFile, patch_assets_i
             copy_file(source_file, Path("gamedata") / directory / source_file.name, archive_file)
 
 
+def copy_profiles(profiles_root: Path, archive_file: zipfile.ZipFile, patch_profiles: list[str]) -> None:
+    for profile in patch_profiles:
+        copy_file(profiles_root / profile, Path("profiles") / profile, archive_file)
+
+
 def package_patch(patch: str, game: str, args: argparse.Namespace, config: Dict, assets_info: Dict) -> None:
     print(f"Packaging patch {patch} for game {game}...")
     assets_info = assets_info[patch][game]
@@ -122,6 +127,9 @@ def package_patch(patch: str, game: str, args: argparse.Namespace, config: Dict,
         os.remove(archive_path)
     with zipfile.ZipFile(archive_path, 'x') as archive_file:
         copy_assets(asset_path_root, archive_file, assets_info["gamedata"])
+
+        profiles_root = Path(__file__) / ".." / ".." / "patches" / patch / "profiles" / game
+        copy_profiles(profiles_root, archive_file, assets_info["profiles"])
 
 
 def main() -> None:

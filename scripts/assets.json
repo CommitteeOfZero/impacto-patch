@@ -1,6 +1,26 @@
 {
     "english": {
         "chlcc": {
+            "profiles": [
+                "achievementsystem.lua",
+                "buttonprompt.lua",
+                "charset.lua",
+                "dialogue.lua",
+                "equivalentlines.lua",
+                "game.lua",
+                "patch.lua",
+                "savedata.lua",
+                "sprites.lua",
+                "subtitle.lua",
+                "tipssystem.lua",
+                "vfs.lua",
+
+                "hud/delusiontrigger.lua",
+                "hud/extramenus.lua",
+                "hud/optionsmenu.lua",
+                "hud/titlemenu.lua"
+            ],
+
             "gamedata": {
                 "achievements": [
                     "achievements/png/TROP000.PNG",
