@@ -19,13 +19,13 @@ root.Sprites.SystemMenuButtonPrompt = {
 root.TrophyMenu.ButtonPromptSprite = {
     Sprite = "ButtonPromptTrophy",
     Icons = {
-        { Key = "Directional",       X = 34 * guideSpriteScale,  Y = 4 * guideSpriteScale },
-        { Key = root.PADinput.PAD1A, X = 258 * guideSpriteScale, Y = 4 * guideSpriteScale },
+        { Key = "Directional",       X = 35 * guideSpriteScale,  Y = 4 * guideSpriteScale },
+        { Key = root.PADinput.PAD1B, X = 321 * guideSpriteScale, Y = 4 * guideSpriteScale },
     }
 }
 root.Sprites.ButtonPromptTrophy = {
     Sheet = "GuideSpritesNoIcons",
-    Bounds = { X = 2, Y = 491, Width = 1015, Height = 44 },
+    Bounds = { X = 2, Y = 540, Width = 1015, Height = 44 },
     BaseScale = { X = guideSpriteScale, Y = guideSpriteScale }
 }
 
@@ -131,7 +131,7 @@ root.TipsMenu.ButtonPromptSprite = {
         { Key = "ArrowUpDown",       X = 34 * guideSpriteScale,   Y = 4 * guideSpriteScale },
         { Key = root.PADinput.PAD1A, X = 258 * guideSpriteScale,  Y = 4 * guideSpriteScale },
         { Key = root.PADinput.PAD1X, X = 543 * guideSpriteScale,  Y = 4 * guideSpriteScale },
-        { Key = "ArrowLeftRight", X = 965 * guideSpriteScale, Y = 4 * guideSpriteScale },
+        { Key = "ArrowLeftRight",    X = 965 * guideSpriteScale, Y = 4 * guideSpriteScale },
         { Key = root.PADinput.PAD1B, X = 1249 * guideSpriteScale, Y = 4 * guideSpriteScale },
     }
 }
@@ -161,17 +161,19 @@ root.SaveMenu.ButtonPrompt = {
         { Key = "Directional",       X = 34 * guideSpriteScale,  Y = 4 * guideSpriteScale },
         { Key = root.PADinput.PAD1A, X = 258 * guideSpriteScale, Y = 4 * guideSpriteScale },
         { Key = root.PADinput.PAD1Y, X = 391 * guideSpriteScale, Y = 4 * guideSpriteScale },
-        { Key = root.PADinput.PAD1B, X = 645 * guideSpriteScale, Y = 4 * guideSpriteScale },
+        { Key = root.PADinput.PAD1L1, X = 611 * guideSpriteScale, Y = 4 * guideSpriteScale },
+        { Key = root.PADinput.PAD1R1, X = 645 * guideSpriteScale, Y = 4 * guideSpriteScale },
+        { Key = root.PADinput.PAD1B, X = 931 * guideSpriteScale, Y = 4 * guideSpriteScale },
     }
 }
 root.Sprites.SaveButtonPrompt = {
     Sheet = "GuideSpritesNoIcons",
-    Bounds = { X = 2, Y = 442, Width = 1015, Height = 44 },
+    Bounds = { X = 2, Y = 442, Width = 1198, Height = 44 },
     BaseScale = { X = guideSpriteScale, Y = guideSpriteScale }
 }
 
 root.SystemMenu.SystemMenuButtonPromptPosition.X = 1029;
-root.TrophyMenu.ButtonPromptPosition.X = 1029;
+root.TrophyMenu.ButtonPromptPosition.X = 989;
 root.OptionsMenu.ButtonPromptPosition.X = 533;
 root.ExtraMenus.AlbumMenu.ButtonGuidePos.X = 723;
 root.ExtraMenus.AlbumMenu.CgViewerButtonGuidePos.X = 512;
@@ -181,4 +183,4 @@ root.ExtraMenus.MusicMenu.ButtonPromptPosition.X = 642;
 root.ExtraMenus.MovieMenu.MovieButtonExtraPromptPosition.X = 817;
 root.TipsMenu.ButtonPromptPosition.X = 370;
 root.BacklogMenu.ButtonPromptPosition.X = 881;
-root.SaveMenu.ButtonPromptPosition.X = 773;
+root.SaveMenu.ButtonPromptPosition.X = 582;
