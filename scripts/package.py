@@ -92,6 +92,10 @@ def load_assets_info() -> Dict:
     return assets_info
 
 
+def get_patch_root(patch: str) -> Path:
+    return Path(__file__) / ".." / ".." / "patches" / patch
+
+
 def build_script(script_info: Dict, config: Dict) -> Path:
     python_command = config["paths"]["tools"]["python"]
     coalesc3_path = Path(config["paths"]["tools"]["coalesc3"])
@@ -141,6 +145,10 @@ def copy_directory(source_directory: Path, archived_directory_path: Path, archiv
 
 def copy_assets(source_root: Path, archive_file: zipfile.ZipFile, patch_assets_info: Dict) -> None:
     for directory in patch_assets_info.keys():
+        if directory == ".":
+            # Refers to the root gamedata directory in this repo -- not assets
+            continue
+
         for asset_path in patch_assets_info[directory]:
             source_file = source_root / asset_path
             copy_file(source_file, Path("gamedata") / directory / source_file.name, archive_file)
@@ -172,8 +180,12 @@ def package_patch(patch: str, game: str, args: argparse.Namespace, config: Dict,
 
         copy_assets(asset_path_root, archive_file, assets_info["gamedata"])
 
-        profiles_root = Path(__file__) / ".." / ".." / "patches" / patch / "profiles" / game
-        copy_profiles(profiles_root, archive_file, assets_info["profiles"])
+        copy_profiles(get_patch_root(patch) / "profiles" / game, archive_file, assets_info["profiles"])
+
+        if "." in assets_info["gamedata"].keys():
+            gamedata_path = get_patch_root(patch) / "gamedata" / game
+            for file in assets_info["gamedata"]["."]:
+                copy_file(gamedata_path / file, Path("gamedata") / file, archive_file)
 
 
 def main() -> None:
