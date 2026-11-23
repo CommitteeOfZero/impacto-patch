@@ -10,3 +10,4 @@ include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/hud/titlemenu.
 include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/vfs.lua');
 include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/charset.lua');
 include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/savedata.lua');
+include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/buttonprompt.lua');
