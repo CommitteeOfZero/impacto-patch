@@ -10,6 +10,11 @@
                 "chlcc": "/PATH/TO/ASSETS/ROOT/DIRECTORY/",
                 "cclcc": "/PATH/TO/ASSETS/ROOT/DIRECTORY/"
             }
+        },
+
+        "tools": {
+            "python": "PYTHON_EXECUTABLE_NAME",
+            "coalesc3": "/PATH/TO/COALESC3/build.py"
         }
     }
 }

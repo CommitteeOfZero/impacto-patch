@@ -21,6 +21,14 @@
                 "hud/titlemenu.lua"
             ],
 
+            "script": {
+                "game": "chaos_head_lcc",
+                "platform": "ps3",
+                "language": "eng",
+
+                "file": "./c0script.cpk"
+            },
+
             "gamedata": {
                 "achievements": [
                     "achievements/png/TROP000.PNG",
