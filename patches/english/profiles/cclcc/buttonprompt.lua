@@ -60,7 +60,7 @@ root.ExtraMenus.LibraryMenu.AlbumMenuGuideSprite = {
         { Key = "Directional",        X = 66, Y = 8.5 },
         { Key = root.PADinput.PAD1A,  X = 282, Y = 8.5 },
         { Key = root.PADinput.PAD1L1, X = 542, Y = 8.5 },
-        { Key = root.PADinput.PAD1R2, X = 570, Y = 8.5 },
+        { Key = root.PADinput.PAD1R1, X = 570, Y = 8.5 },
         { Key = root.PADinput.PAD1B,  X = 931, Y = 8.5 },
     }
 };
@@ -74,7 +74,7 @@ root.ExtraMenus.LibraryMenu.AlbumMenuCGViewerGuideSprite = {
     Icons = {
         { Key = "Directional",        X = 66, Y = 8.5 },
         { Key = root.PADinput.PAD1A,  X = 283, Y = 8.5 },
-        { Key = root.PADinput.PAD1Y,  X = 535, Y = 8.5 },
+        { Key = root.PADinput.PAD1X,  X = 535, Y = 8.5 },
         { Key = root.PADinput.PAD1L2, X = 901, Y = 8.5 },
         { Key = root.PADinput.PAD1R2, X = 929, Y = 8.5 },
         { Key = root.PADinput.PAD1B,  X = 1183, Y = 8.5 },
@@ -90,8 +90,8 @@ root.ExtraMenus.LibraryMenu.MusicMenuGuideSprite = {
     Icons = {
         { Key = "Directional",       X = 66, Y = 8.5 },
         { Key = root.PADinput.PAD1A, X = 283, Y = 8.5 },
-        { Key = root.PADinput.PAD1Y, X = 534, Y = 8.5 },
-        { Key = root.PADinput.PAD1X, X = 750, Y = 8.5 },
+        { Key = root.PADinput.PAD1X, X = 534, Y = 8.5 },
+        { Key = root.PADinput.PAD1Y, X = 750, Y = 8.5 },
         { Key = root.PADinput.PAD1B, X = 1183, Y = 8.5 },
     }
 };
@@ -150,7 +150,9 @@ for i, menuType in ipairs({ "QuickLoad", "Save", "Load" }) do
             { Key = "Directional",       X = 66, Y = 8.5 },
             { Key = root.PADinput.PAD1A, X = 282, Y = 8.5 },
             { Key = root.PADinput.PAD1Y, X = 535, Y = 8.5 },
-            { Key = root.PADinput.PAD1B, X = 823, Y = 8.5 },
+            { Key = root.PADinput.PAD1L1, X = 794, Y = 8.5 },
+            { Key = root.PADinput.PAD1R1, X = 822, Y = 8.5 },
+            { Key = root.PADinput.PAD1B, X = 1147, Y = 8.5 },
         }
     };
     root.Sprites[menuType .. "ButtonGuide"] = {
@@ -162,7 +164,7 @@ end
 root.GameSpecific.UIButtonGuideSprites[1] = {
     Sprite = "UIButtonGuide1",
     Icons = {
-        { Key = "Directional", X = 66, Y = 8.5 },
+        { Key = "Directional", X = 68, Y = 8.5 },
     }
 };
 root.Sprites["UIButtonGuide1"] = {
@@ -173,8 +175,8 @@ root.Sprites["UIButtonGuide1"] = {
 root.GameSpecific.UIButtonGuideSprites[2] = {
     Sprite = "UIButtonGuide0",
     Icons = {
-        { Key = "Directional", X = 66, Y = 8.5 },
-        { Key = root.PADinput.PAD1A, X = 282, Y = 8.5 },
+        { Key = "Directional", X = 68, Y = 8.5 },
+        { Key = root.PADinput.PAD1A, X = 284, Y = 8.5 },
     }
 };
 root.Sprites["UIButtonGuide0"] = {
