@@ -1,7 +1,30 @@
-local numberOfPages = 1
-local i = numberOfPages;
-while root.Sprites["ManualPage" .. i] ~= nil do
-    root.Sprites["ManualPage" .. i] = nil
-    i = i + 1
-    root.HelpMenu.ManualPages[i] = nil; -- 1 indexed array
-end
+root.Overlay.HelpMenu = {
+    UseOverlayHelp = true,
+    Sections = {
+        { ["Dialogue & Navigation"] = {
+            { Action = "Confirm", KeyboardMouse = "Enter, Left Click", Controller = "South Button", Touch = "Tap" },
+            { Action = "Back / Hide Text", KeyboardMouse = "Backspace, Right Click", Controller = "East Button", Touch = "Two Finger Tap, Pinch" },
+            { Action = "Select / Navigate", KeyboardMouse = "Arrow Keys", Controller = "D-Pad, Left Stick", Touch = "-" },
+            { Action = "Auto Mode", KeyboardMouse = "F3, Delete", Controller = "West Button", Touch = "Touch and Hold" },
+            { Action = "Skip Mode / Next Page", KeyboardMouse = "E", Controller = "Right Shoulder", Touch = "Flick Left" },
+            { Action = "Force Skip / Previous Page", KeyboardMouse = "Ctrl, Q", Controller = "Left Shoulder", Touch = "Flick Right" },
+            { Action = "Delusion Trigger (Left)", KeyboardMouse = "Z", Controller = "Left Trigger", Touch = "Drag from Left Circle" },
+            { Action = "Delusion Trigger (Right)", KeyboardMouse = "C", Controller = "Right Trigger", Touch = "Drag from Right Circle" },
+            { Action = "Text Scroll (Tips)", KeyboardMouse = "[/]", Controller = "Right Stick", Touch = "Swipe" },
+            { Action = "Scroll Text & List / Backlog", KeyboardMouse = "Mouse Wheel", Controller = "D-Pad, Stick", Touch = "Swipe" },
+        }},
+        { ["Menus & System"] = {
+            { Action = "System Menu", KeyboardMouse = "1, Right Click", Controller = "Start", Touch = "Two Finger Tap, Pinch" },
+            { Action = "Help", KeyboardMouse = "F1", Controller = "-", Touch = "-" },
+            { Action = "Backlog", KeyboardMouse = "F2, Insert", Controller = "North Button", Touch = "Swipe Down" },
+            { Action = "Tips", KeyboardMouse = "F4", Controller = "Select", Touch = "-" },
+            { Action = "Load", KeyboardMouse = "F5", Controller = "-", Touch = "-" },
+            { Action = "Save", KeyboardMouse = "F6", Controller = "-", Touch = "-" },
+            { Action = "Quick Load", KeyboardMouse = "F7", Controller = "-", Touch = "-" },
+            { Action = "Quick Save", KeyboardMouse = "F8", Controller = "Right Stick Click", Touch = "-" },
+            { Action = "Config", KeyboardMouse = "F9", Controller = "-", Touch = "-" },
+            { Action = "Title", KeyboardMouse = "F10", Controller = "-", Touch = "-" },
+            { Action = "Toggle Fullscreen", KeyboardMouse = "Alt-Enter", Controller = "-", Touch = "-" },
+        }},
+    },
+}

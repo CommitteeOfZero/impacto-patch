@@ -4,6 +4,7 @@ include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/dialogue.lua')
 include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/sprites.lua');
 include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/tipssystem.lua');
 include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/hud/delusiontrigger.lua');
+include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/hud/helpmenu.lua');
 include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/hud/extramenus.lua');
 include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/hud/optionsmenu.lua');
 include(root.BasePaths.RootPatchesDir .. '/english/profiles/chlcc/hud/titlemenu.lua');
