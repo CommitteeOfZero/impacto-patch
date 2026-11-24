@@ -1,4 +1,5 @@
 import argparse
+import glob
 import json
 import logging
 import os
@@ -28,7 +29,7 @@ class ArgumentParser:
             "--output", "-o",
             help = "Specify the output directory",
             type = Path,
-            default = Path("./out/")
+            default = Path(__file__) / "../out"
         )
 
         self._parser.add_argument(
@@ -90,26 +91,69 @@ class ArgumentParser:
         return args
 
 
+class PatchDefinition:
+    patch: str
+    game: str
+
+    info: Dict
+
+    def __init__(self: Self, patch_name: str, game: str):
+        self.patch = patch_name
+        self.game = game
+
+        path = Path(__file__) / f"../patch-definitions/{patch_name}/{game}.json"
+        g_logger.info(f"Reading {path}...")
+        with open(path, 'r', encoding = "utf-8") as info_file:
+            self.info = json.load(info_file)
+
+
+def parse_patch_selection(args: argparse.Namespace) -> list[PatchDefinition]:
+    g_logger.info("Parsing patch selection...")
+    patches: list[PatchDefinition] = []
+
+    path_definitions_directory = Path(__file__) / "../patch-definitions/"
+    if len(args.patch) == 0 and args.all:
+        with os.scandir(path_definitions_directory) as entries:
+            args.patch = [entry.name for entry in entries if entry.is_dir]
+
+    all_games = len(args.game) == 0 and args.all
+
+    for patch in args.patch:
+        patch_directory = Path(__file__) / f"../patch-definitions/{patch}/"
+        if not patch_directory.is_dir():
+            g_logger.warning(f"No patch definitions directory with name \"{patch}\" exists")
+            continue
+
+        if all_games:
+            args.game = [Path(entry).name[0:-len(".json")] for entry in glob.glob(f"{patch_directory}/*.json")]
+
+        for game in args.game:
+            info_path = patch_directory / f"{game}.json"
+            if not info_path.is_file():
+                g_logger.warning(f"Patch \"{patch}\" has no definition for game \"{game}\"")
+                continue
+
+            patches += [PatchDefinition(patch, game)]
+
+    if len(patches) == 0:
+        g_logger.error("No patches matched the given filter")
+
+    return patches
+
+
 def load_config() -> Dict:
     g_logger.info("Reading config.json...")
-    if not Path("./config.json"):
+    config_path = Path(__file__) / "../config.json"
+    if not config_path.is_file():
         raise FileNotFoundError(
-            "Could not find ./config.json\n"
-            "Please copy ./config.json.sample and set its necessary values"
+            f"Could not find {config_path}\n"
+            f"Please copy {Path(__file__) / "../config.json.sample"} and set its necessary values"
         )
 
-    with open("./config.json", 'r', encoding = "utf-8") as config_file:
+    with open(config_path, 'r', encoding = "utf-8") as config_file:
         config = json.load(config_file)
 
     return config
-
-
-def load_assets_info() -> Dict:
-    g_logger.info("Reading assets.json...")
-    with open("./assets.json", 'r', encoding = "utf-8") as assets_info_file:
-        assets_info = json.load(assets_info_file)
-
-    return assets_info
 
 
 def get_patch_root(patch: str) -> Path:
@@ -185,36 +229,34 @@ def copy_profiles(profiles_root: Path, archive_file: zipfile.ZipFile, patch_prof
         copy_file(profiles_root / profile, Path("profiles") / profile, archive_file)
 
 
-def package_patch(patch: str, game: str, args: argparse.Namespace, config: Dict, assets_info: Dict) -> None:
-    print(f"Packaging patch {patch} for game {game}...")
-    assets_info = assets_info[patch][game]
-
-    asset_path_root = Path(config["paths"]["patch-assets"][patch][game])
+def package_patch(patch: PatchDefinition, args: argparse.Namespace, config: Dict) -> None:
+    print(f"Packaging patch {patch.patch}/{patch.game}...")
+    asset_path_root = Path(config["paths"]["patch-assets"][patch.patch][patch.game])
     if not asset_path_root.exists():
         raise FileNotFoundError(f"Patch asset path \"{asset_path_root}\" not found")
 
     output_dir = Path(f"{args.output}")
     os.makedirs(output_dir, exist_ok = True)
 
-    archive_path = output_dir / f"{game}-{patch}.zip"
+    archive_path = output_dir / f"{patch.game}-{patch.patch}.zip"
     if archive_path.exists():
         os.remove(archive_path)
     with zipfile.ZipFile(archive_path, 'x') as archive_file:
-        if "script" in assets_info.keys():
+        if "script" in patch.info.keys():
             g_logger.info("===Script stage===")
-            script_path = build_script(assets_info["script"], config, args.clean_script)
+            script_path = build_script(patch.info["script"], config, args.clean_script)
             copy_directory(script_path, Path("gamedata") / script_path.name, archive_file)
 
         g_logger.info("===Asset stage===")
-        copy_assets(asset_path_root, archive_file, assets_info["gamedata"])
+        copy_assets(asset_path_root, archive_file, patch.info["gamedata"])
 
         g_logger.info("===Profiles stage===")
-        copy_profiles(get_patch_root(patch) / "profiles" / game, archive_file, assets_info["profiles"])
+        copy_profiles(get_patch_root(patch.patch) / "profiles" / patch.game, archive_file, patch.info["profiles"])
 
-        if "." in assets_info["gamedata"].keys():
+        if "." in patch.info["gamedata"].keys():
             g_logger.info("===Gamedata stage===")
-            gamedata_path = get_patch_root(patch) / "gamedata" / game
-            for file in assets_info["gamedata"]["."]:
+            gamedata_path = get_patch_root(patch.patch) / "gamedata" / patch.game
+            for file in patch.info["gamedata"]["."]:
                 copy_file(gamedata_path / file, Path("gamedata") / file, archive_file)
 
 
@@ -225,14 +267,16 @@ def main() -> None:
     args = argument_parser.parse()
 
     config = load_config()
-    assets_info = load_assets_info()
+    patch_definitions = parse_patch_selection(args)
 
-    for patch in args.patch:
-        for game in args.game:
-            try:
-                package_patch(patch, game, args, config, assets_info)
-            except Exception as e:
-                g_logger.error(f"Failed to package patch {patch} for game {game}: {e}")
+    for patch in patch_definitions:
+        try:
+            package_patch(patch, args, config)
+            print()
+        except Exception as e:
+            g_logger.error(f"Failed to package patch {patch.patch}/{patch.game}: {e}")
+
+    print("Done!")
 
 
 if __name__ == "__main__":
