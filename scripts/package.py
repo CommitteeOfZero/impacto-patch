@@ -1,12 +1,21 @@
 import argparse
 import json
+import logging
 import os
 import subprocess
-import warnings
 import zipfile
 
 from pathlib import Path
 from typing import Dict, Self
+
+
+g_logger = logging.getLogger(__name__)
+
+def setup_logger() -> None:
+    logging_formatter = logging.Formatter('[%(levelname)s] %(message)s')
+    logging_stream_handler = logging.StreamHandler()
+    logging_stream_handler.setFormatter(logging_formatter)
+    g_logger.addHandler(logging_stream_handler)
 
 
 class ArgumentParser:
@@ -52,6 +61,14 @@ class ArgumentParser:
             default = False
         )
 
+        self._parser.add_argument(
+            "--log-level", "-l",
+            help = "Set logging verbosity level",
+            type = str,
+            choices = ["critical", "fatal", "error", "warn", "warning", "info", "debug"],
+            default = "warning",
+        )
+
 
     def parse(self: Self) -> argparse.Namespace:
         args = self._parser.parse_args()
@@ -62,17 +79,19 @@ class ArgumentParser:
             if len(args.game) == 0:
                 raise RuntimeError("No games specified")
         elif len(args.patch) > 0 and len(args.game) > 0:
-            warnings.warn(
+            g_logger.warning(
                 "You specified an explicit list of patches and games, "
-                "so --all will be ignored",
-                UserWarning
+                "so --all will be ignored"
             )
             args.all = False
+
+        g_logger.setLevel(str.upper(args.log_level))
 
         return args
 
 
 def load_config() -> Dict:
+    g_logger.info("Reading config.json...")
     if not Path("./config.json"):
         raise FileNotFoundError(
             "Could not find ./config.json\n"
@@ -86,6 +105,7 @@ def load_config() -> Dict:
 
 
 def load_assets_info() -> Dict:
+    g_logger.info("Reading assets.json...")
     with open("./assets.json", 'r', encoding = "utf-8") as assets_info_file:
         assets_info = json.load(assets_info_file)
 
@@ -97,6 +117,7 @@ def get_patch_root(patch: str) -> Path:
 
 
 def build_script(script_info: Dict, config: Dict, clean: bool) -> Path:
+    print("Building script...")
     python_command = config["paths"]["tools"]["python"]
     coalesc3_path = Path(config["paths"]["tools"]["coalesc3"])
 
@@ -114,6 +135,7 @@ def build_script(script_info: Dict, config: Dict, clean: bool) -> Path:
     if clean:
         args += ["--clean"]
 
+    g_logger.info(f"Executing {args}")
     process = subprocess.run(
         args = args,
         cwd = coalesc3_path.parent
@@ -127,15 +149,16 @@ def build_script(script_info: Dict, config: Dict, clean: bool) -> Path:
 
 def copy_file(source_file: Path, archived_file_path: Path, archive_file: zipfile.ZipFile) -> None:
     if not source_file.exists():
-        warnings.warn(f"File \"{source_file}\" not found")
+        g_logger.warning(f"File \"{source_file}\" not found")
         return
 
+    g_logger.info(f"Adding \"{source_file}\" to archive at \"{archived_file_path}\"")
     archive_file.write(source_file, archived_file_path)
 
 
 def copy_directory(source_directory: Path, archived_directory_path: Path, archive_file: zipfile.ZipFile) -> None:
     if not source_directory.exists():
-        warnings.warn(f"Source directory \"{source_directory}\" not found")
+        g_logger.warning(f"Source directory \"{source_directory}\" not found")
         return
 
     if source_directory.is_file():
@@ -178,20 +201,26 @@ def package_patch(patch: str, game: str, args: argparse.Namespace, config: Dict,
         os.remove(archive_path)
     with zipfile.ZipFile(archive_path, 'x') as archive_file:
         if "script" in assets_info.keys():
+            g_logger.info("===Script stage===")
             script_path = build_script(assets_info["script"], config, args.clean_script)
             copy_directory(script_path, Path("gamedata") / script_path.name, archive_file)
 
+        g_logger.info("===Asset stage===")
         copy_assets(asset_path_root, archive_file, assets_info["gamedata"])
 
+        g_logger.info("===Profiles stage===")
         copy_profiles(get_patch_root(patch) / "profiles" / game, archive_file, assets_info["profiles"])
 
         if "." in assets_info["gamedata"].keys():
+            g_logger.info("===Gamedata stage===")
             gamedata_path = get_patch_root(patch) / "gamedata" / game
             for file in assets_info["gamedata"]["."]:
                 copy_file(gamedata_path / file, Path("gamedata") / file, archive_file)
 
 
 def main() -> None:
+    setup_logger()
+
     argument_parser = ArgumentParser()
     args = argument_parser.parse()
 
@@ -203,7 +232,7 @@ def main() -> None:
             try:
                 package_patch(patch, game, args, config, assets_info)
             except Exception as e:
-                print(f"Failed to package patch {patch} for game {game}: {e}")
+                g_logger.error(f"Failed to package patch {patch} for game {game}: {e}")
 
 
 if __name__ == "__main__":
