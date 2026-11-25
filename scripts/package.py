@@ -143,11 +143,11 @@ def parse_patch_selection(args: argparse.Namespace) -> list[PatchDefinition]:
 
 def load_config() -> Dict:
     g_logger.info("Reading config.json...")
-    config_path = Path(__file__) / "../config.json"
+    config_path = Path(__file__).parent / "config.json"
     if not config_path.is_file():
         raise FileNotFoundError(
             f"Could not find {config_path}\n"
-            f"Please copy {Path(__file__) / "../config.json.sample"} and set its necessary values"
+            f"Please copy {Path(__file__).parent / 'config.json.sample'} and set its necessary values"
         )
 
     with open(config_path, 'r', encoding = "utf-8") as config_file:
