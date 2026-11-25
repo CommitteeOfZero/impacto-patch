@@ -191,29 +191,37 @@ def build_script(script_info: Dict, config: Dict, clean: bool) -> Path:
     return coalesc3_path / f"../out/{game}/{platform}_{language}/"
 
 
-def copy_file(source_file: Path, archived_file_path: Path, archive_file: zipfile.ZipFile) -> None:
+def copy_file(source_file: Path, inner_path: Path, archive_file: zipfile.ZipFile) -> None:
     if not source_file.exists():
         g_logger.warning(f"File \"{source_file}\" not found")
         return
 
-    g_logger.info(f"Adding \"{source_file}\" to archive at \"{archived_file_path}\"")
-    archive_file.write(source_file, archived_file_path)
+    g_logger.info(f"Adding \"{source_file}\" to archive at \"{inner_path}\"")
+    archive_file.write(source_file, inner_path)
 
 
-def copy_directory(source_directory: Path, archived_directory_path: Path, archive_file: zipfile.ZipFile) -> None:
+def copy_directory(source_directory: Path, inner_path: Path, archive_file: zipfile.ZipFile) -> None:
     if not source_directory.exists():
         g_logger.warning(f"Source directory \"{source_directory}\" not found")
         return
 
     if source_directory.is_file():
-        copy_file(source_directory, archived_directory_path, archive_file)
+        copy_file(
+            source_file=source_directory, 
+            inner_path=inner_path, 
+            archive_file=archive_file
+        )
         return
 
     for filename in os.listdir(source_directory):
-        copy_directory(source_directory / filename, archived_directory_path / filename, archive_file)
+        copy_directory(
+            source_directory=source_directory / filename, 
+            inner_path=inner_path / filename, 
+            archive_file=archive_file
+        )
 
 
-def copy_assets(source_root: Path, archive_file: zipfile.ZipFile, patch_assets_info: Dict) -> None:
+def copy_assets(source_root: Path, archive_file: zipfile.ZipFile, patch_assets_info: Dict, patch: str) -> None:
     for directory in patch_assets_info.keys():
         if directory == ".":
             # Refers to the root gamedata directory in this repo -- not assets
@@ -221,12 +229,16 @@ def copy_assets(source_root: Path, archive_file: zipfile.ZipFile, patch_assets_i
 
         for asset_path in patch_assets_info[directory]:
             source_file = source_root / asset_path
-            copy_file(source_file, Path("gamedata") / directory / source_file.name, archive_file)
+            copy_file(source_file, Path(patch) / "gamedata" / directory / source_file.name, archive_file)
 
 
-def copy_profiles(profiles_root: Path, archive_file: zipfile.ZipFile, patch_profiles: list[str]) -> None:
+def copy_profiles(profiles_root: Path, archive_file: zipfile.ZipFile, patch_profiles: list[str], patch: str) -> None:
     for profile in patch_profiles:
-        copy_file(profiles_root / profile, Path("profiles") / profile, archive_file)
+        copy_file(
+            source_file=profiles_root / profile, 
+            inner_path=Path(patch) / "profiles" / profile, 
+            archive_file=archive_file,
+        )
 
 
 def package_patch(patch: PatchDefinition, args: argparse.Namespace, config: Dict) -> None:
@@ -246,19 +258,37 @@ def package_patch(patch: PatchDefinition, args: argparse.Namespace, config: Dict
             g_logger.info("===Script stage===")
             script_directory = build_script(patch.info["script"], config, args.clean_script)
             for script_path in patch.info["script"]["files"]:
-                copy_directory(script_directory / script_path, Path("gamedata") / script_path, archive_file)
+                copy_directory(
+                    source_directory=script_directory / script_path, 
+                    inner_path=Path(patch.patch) / Path("gamedata") / script_path,
+                    archive_file=archive_file,
+                )
 
         g_logger.info("===Asset stage===")
-        copy_assets(asset_path_root, archive_file, patch.info["gamedata"])
+        copy_assets(
+            patch=patch.patch,
+            source_root=asset_path_root, 
+            archive_file=archive_file, 
+            patch_assets_info=patch.info["gamedata"],
+        )
 
         g_logger.info("===Profiles stage===")
-        copy_profiles(get_patch_root(patch.patch) / "profiles" / patch.game, archive_file, patch.info["profiles"])
+        copy_profiles(
+            patch=patch.patch,
+            profiles_root=get_patch_root(patch.patch) / "profiles" / patch.game, 
+            archive_file=archive_file, 
+            patch_profiles=patch.info["profiles"], 
+        )
 
         if "." in patch.info["gamedata"].keys():
             g_logger.info("===Gamedata stage===")
             gamedata_path = get_patch_root(patch.patch) / "gamedata" / patch.game
             for file in patch.info["gamedata"]["."]:
-                copy_file(gamedata_path / file, Path("gamedata") / file, archive_file)
+                copy_file(
+                    source_file=gamedata_path / file,  
+                    inner_path=Path(patch.patch) / "gamedata" / file,
+                    archive_file=archive_file,
+                )
 
 
 def main() -> None:
