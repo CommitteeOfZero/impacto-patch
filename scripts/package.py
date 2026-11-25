@@ -188,7 +188,7 @@ def build_script(script_info: Dict, config: Dict, clean: bool) -> Path:
     if process.returncode != 0:
         raise RuntimeError(f"Failed to build script for game {game} - {platform} - {language}")
 
-    return coalesc3_path / ".." / "out" / game / f"{platform}_{language}" / script_info["file"]
+    return coalesc3_path / f"../out/{game}/{platform}_{language}/"
 
 
 def copy_file(source_file: Path, archived_file_path: Path, archive_file: zipfile.ZipFile) -> None:
@@ -244,8 +244,9 @@ def package_patch(patch: PatchDefinition, args: argparse.Namespace, config: Dict
     with zipfile.ZipFile(archive_path, 'x') as archive_file:
         if "script" in patch.info.keys():
             g_logger.info("===Script stage===")
-            script_path = build_script(patch.info["script"], config, args.clean_script)
-            copy_directory(script_path, Path("gamedata") / script_path.name, archive_file)
+            script_directory = build_script(patch.info["script"], config, args.clean_script)
+            for script_path in patch.info["script"]["files"]:
+                copy_directory(script_directory / script_path, Path("gamedata") / script_path, archive_file)
 
         g_logger.info("===Asset stage===")
         copy_assets(asset_path_root, archive_file, patch.info["gamedata"])

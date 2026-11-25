@@ -19,14 +19,14 @@
         "platform": "ps4",
         "language": "eng",
 
-        "file": "./"
+        "files": ["script/"]
     },
 
     "gamedata": {
         ".": [
             "bg.mlp",
             "movie.mlp",
-            "ps4_eng.cls",
+            "script.cls",
             "system.mlp",
 
             "fonts/ahellya italic.ttf",

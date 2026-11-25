@@ -24,7 +24,7 @@
         "platform": "ps3",
         "language": "eng",
 
-        "file": "./c0script.cpk"
+        "files": ["c0script.cpk"]
     },
 
     "gamedata": {

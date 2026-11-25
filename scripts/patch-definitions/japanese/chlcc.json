@@ -15,12 +15,16 @@
         "platform": "ps3",
         "language": "jpn",
 
-        "file": "./c0script.cpk"
+        "files": [
+            "script/_Startup.scx",
+            "script/CHLCC_AA10.scx"
+        ]
     },
 
     "gamedata": {
         ".": [
             "movie.mlp",
+            "script.mlp",
             "system.mlp"
         ],
 

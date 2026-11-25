@@ -13,13 +13,16 @@
         "platform": "ps4",
         "language": "jpn",
 
-        "file": "./"
+        "files": [
+            "script/_startup_ps4.scx",
+            "script/CLAA03.scx"
+        ]
     },
 
     "gamedata": {
         ".": [
             "movie.mlp",
-            "ps4_jpn.cls",
+            "script.mlp",
             "system.mlp"
         ],
 
