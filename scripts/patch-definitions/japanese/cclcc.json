@@ -1,0 +1,62 @@
+{
+    "profiles": [
+        "achievementsystem.lua",
+        "buttonprompt.lua",
+        "game.lua",
+        "patch.lua",
+        "sprites.lua",
+        "vfs.lua"
+    ],
+
+    "script": {
+        "game": "chaos_child_lcc",
+        "platform": "ps4",
+        "language": "jpn",
+
+        "file": "./"
+    },
+
+    "gamedata": {
+        ".": [
+            "movie.mlp",
+            "ps4_jpn.cls",
+            "system.mlp"
+        ],
+
+        "achievements": [
+            "achievements/TROP000.PNG",
+            "achievements/TROP001.PNG",
+            "achievements/TROP002.PNG",
+            "achievements/TROP003.PNG",
+            "achievements/TROP004.PNG",
+            "achievements/TROP005.PNG",
+            "achievements/TROP006.PNG",
+            "achievements/TROP007.PNG",
+            "achievements/TROP008.PNG",
+            "achievements/TROP009.PNG",
+            "achievements/TROP010.PNG",
+            "achievements/TROP011.PNG",
+            "achievements/TROP012.PNG",
+            "achievements/TROP013.PNG",
+            "achievements/TROP014.PNG",
+            "achievements/TROP015.PNG",
+            "achievements/TROP016.PNG",
+            "achievements/TROP017.PNG",
+            "achievements/TROP018.PNG",
+            "achievements/TROP019.PNG",
+            "achievements/TROP020.PNG",
+            "achievements/TROP021.PNG",
+            "achievements/TROP022.PNG",
+            "achievements/TROP023.PNG"
+        ],
+
+        "movie": [
+            "movie/movie_op_swi.webm"
+        ],
+
+        "system": [
+            "system/GUIDE_SPRITES.png",
+            "system/TITLE_CHIP.png"
+        ]
+    }
+}
