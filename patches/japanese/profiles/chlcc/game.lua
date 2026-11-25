@@ -2,6 +2,7 @@ include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/chlcc/achievementsy
 include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/chlcc/sprites.lua');
 include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/chlcc/hud/delusiontrigger.lua');
 include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/chlcc/hud/helpmenu.lua');
+include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/chlcc/hud/extramenus.lua');
 include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/chlcc/vfs.lua');
 include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/chlcc/sprites.lua');
 include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/chlcc/buttonprompt.lua');

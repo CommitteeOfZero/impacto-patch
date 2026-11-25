@@ -5,7 +5,9 @@
         "game.lua",
         "patch.lua",
         "sprites.lua",
-        "vfs.lua"
+        "vfs.lua",
+
+        "hud/extramenus.lua"
     ],
 
     "script": {
@@ -61,6 +63,7 @@
 
         "system": [
             "system/GUIDE_SPRITES.png",
+            "system/MOVMENU.png",
             "system/TITLE_CHIP.png"
         ]
     }

@@ -3,4 +3,5 @@ include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/cclcc/vfs.lua');
 include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/cclcc/sprites.lua');
 include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/cclcc/buttonprompt.lua');
 include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/cclcc/hud/helpmenu.lua');
+include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/cclcc/hud/extramenus.lua');
 include(root.BasePaths.RootPatchesDir .. '/japanese/profiles/cclcc/subtitle.lua');
