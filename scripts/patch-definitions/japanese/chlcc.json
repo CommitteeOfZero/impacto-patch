@@ -85,6 +85,16 @@
             "achievements/TROPLOCK.PNG"
         ],
 
+        "fonts": [
+            "fonts/Futehodo-MaruGothic.ttf",
+            "fonts/genkai-mincho_edited.otf",
+            "fonts/KTEGAKI.ttf",
+            "fonts/LilitaOne-Regular.ttf",
+            "fonts/Natsuzemi-MaruGothic-Black.ttf",
+            "fonts/SourGummy-SemiBold.ttf",
+            "fonts/SwankyandMooMoo-Regular.ttf"
+        ],
+
         "movie": [
             "movie/ENDROLL_RIM.webm",
             "movie/ENDROLL_NAN.webm",

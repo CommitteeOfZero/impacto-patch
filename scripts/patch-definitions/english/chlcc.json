@@ -33,15 +33,6 @@
             "movie.mlp",
             "system.mlp",
 
-            "fonts/DoulosSIL-Regular.ttf",
-            "fonts/Futehodo-MaruGothic.ttf",
-            "fonts/genkai-mincho_edited.otf",
-            "fonts/KTEGAKI.ttf",
-            "fonts/LilitaOne-Regular.ttf",
-            "fonts/Natsuzemi-MaruGothic-Black.ttf",
-            "fonts/SourGummy-SemiBold.ttf",
-            "fonts/SwankyandMooMoo-Regular.ttf",
-
             "subtitles/contract.ass",
             "subtitles/violet_prayer.ass",
 
@@ -185,6 +176,17 @@
             "bg/png/ID00369.png",
             "bg/png/ID00370.png",
             "bg/png/tutorial.png"
+        ],
+
+        "fonts": [
+            "fonts/DoulosSIL-Regular.ttf",
+            "fonts/Futehodo-MaruGothic.ttf",
+            "fonts/genkai-mincho_edited.otf",
+            "fonts/KTEGAKI.ttf",
+            "fonts/LilitaOne-Regular.ttf",
+            "fonts/Natsuzemi-MaruGothic-Black.ttf",
+            "fonts/SourGummy-SemiBold.ttf",
+            "fonts/SwankyandMooMoo-Regular.ttf"
         ],
 
         "movie": [

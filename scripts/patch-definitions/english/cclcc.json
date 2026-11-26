@@ -30,19 +30,6 @@
             "script.cls",
             "system.mlp",
 
-            "fonts/ahellya italic.ttf",
-            "fonts/ahellya.ttf",
-            "fonts/Fredoka-SemiBold.ttf",
-            "fonts/Futehodo-MaruGothic.ttf",
-            "fonts/Handy_Andy.otf",
-            "fonts/Hultog Italic.ttf",
-            "fonts/Hultog.ttf",
-            "fonts/kochi-gothic-subst.ttf",
-            "fonts/LilitaOne-Regular.ttf",
-            "fonts/NotoSansJP-VariableFont_wght.ttf",
-            "fonts/setofont-ex.ttf",
-            "fonts/setofont.ttf",
-
             "subtitles/movie_ed03_karaonly.ass",
             "subtitles/movie_op_lq_v3_karaonly.ass",
             "subtitles/movie_op_swi_karaonly.ass",
@@ -161,6 +148,14 @@
             "bg/png/EV_HAN001E.png",
             "bg/png/tutorial.png",
             "bg/png/z_warning.png"
+        ],
+
+        "fonts": [
+            "fonts/Fredoka-SemiBold.ttf",
+            "fonts/Futehodo-MaruGothic.ttf",
+            "fonts/Handy_Andy.otf",
+            "fonts/kochi-gothic-subst.ttf",
+            "fonts/LilitaOne-Regular.ttf"
         ],
 
         "movie": [

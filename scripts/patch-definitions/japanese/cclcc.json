@@ -57,6 +57,14 @@
             "achievements/TROPLOCK.PNG"
         ],
 
+        "fonts": [
+            "fonts/Fredoka-SemiBold.ttf",
+            "fonts/Futehodo-MaruGothic.ttf",
+            "fonts/Handy_Andy.otf",
+            "fonts/kochi-gothic-subst.ttf",
+            "fonts/LilitaOne-Regular.ttf"
+        ],
+
         "movie": [
             "movie/movie_op_swi.webm"
         ],
