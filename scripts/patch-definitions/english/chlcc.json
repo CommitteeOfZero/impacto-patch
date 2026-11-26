@@ -15,6 +15,7 @@
 
         "hud/delusiontrigger.lua",
         "hud/extramenus.lua",
+        "hud/helpmenu.lua",
         "hud/optionsmenu.lua",
         "hud/titlemenu.lua"
     ],
