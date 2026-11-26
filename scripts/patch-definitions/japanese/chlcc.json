@@ -5,6 +5,7 @@
         "game.lua",
         "patch.lua",
         "sprites.lua",
+        "subtitle.lua",
         "vfs.lua",
 
         "hud/delusiontrigger.lua",
@@ -27,7 +28,26 @@
         ".": [
             "movie.mlp",
             "script.mlp",
-            "system.mlp"
+            "system.mlp",
+
+            "subtitles/ENDROLL_AYA_karaonly.ass",
+            "subtitles/ENDROLL_AYA_PSP_karaonly.ass",
+            "subtitles/ENDROLL_KOZ_karaonly.ass",
+            "subtitles/ENDROLL_KOZ_PSP_karaonly.ass",
+            "subtitles/ENDROLL_MIA_karaonly.ass",
+            "subtitles/ENDROLL_MIA_PSP_karaonly.ass",
+            "subtitles/ENDROLL_NAN_karaonly.ass",
+            "subtitles/ENDROLL_NAN_PSP_karaonly.ass",
+            "subtitles/ENDROLL_RIM_karaonly.ass",
+            "subtitles/ENDROLL_RIM_PSP_karaonly.ass",
+            "subtitles/ENDROLL_SEN_karaonly.ass",
+            "subtitles/ENDROLL_SEN_PSP_karaonly.ass",
+            "subtitles/ENDROLL_YUA_karaonly.ass",
+            "subtitles/ENDROLL_YUA_PSP_karaonly.ass",
+            "subtitles/OP_karaonly.ass",
+            "subtitles/OP2_karaonly.ass",
+            "subtitles/OP3_karaonly.ass",
+            "subtitles/OP4_karaonly.ass"
         ],
 
         "achievements": [

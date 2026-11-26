@@ -5,6 +5,7 @@
         "game.lua",
         "patch.lua",
         "sprites.lua",
+        "subtitle.lua",
         "vfs.lua",
 
         "hud/extramenus.lua",
@@ -26,7 +27,11 @@
         ".": [
             "movie.mlp",
             "script.mlp",
-            "system.mlp"
+            "system.mlp",
+
+            "subtitles/movie_ed03_karaonly.ass",
+            "subtitles/movie_op_lq_v3_karaonly.ass",
+            "subtitles/movie_op_swi_karaonly.ass"
         ],
 
         "achievements": [
