@@ -9,7 +9,6 @@ import zipfile
 from pathlib import Path
 from typing import Dict, Self
 
-
 g_logger = logging.getLogger(__name__)
 
 def setup_logger() -> None:
@@ -191,12 +190,24 @@ def build_script(script_info: Dict, config: Dict, clean: bool) -> Path:
     return coalesc3_path / f"../out/{game}/{platform}_{language}/"
 
 
+g_written_dirs: dict[str, set[str]] = dict()
 def copy_file(source_file: Path, inner_path: Path, archive_file: zipfile.ZipFile) -> None:
     if not source_file.exists():
         g_logger.warning(f"File \"{source_file}\" not found")
         return
 
     g_logger.info(f"Adding \"{source_file}\" to archive at \"{inner_path}\"")
+
+    inner_path = Path(Path(inner_path).as_posix())
+    
+    path_parts = inner_path.parts
+
+    for end in range(1, len(path_parts)):
+        folder = "/".join(path_parts[:end]) + "/"
+        if folder not in g_written_dirs.setdefault(archive_file, set()) :
+            archive_file.writestr(folder, b"")
+            g_written_dirs[archive_file].add(folder)
+
     archive_file.write(source_file, inner_path)
 
 
