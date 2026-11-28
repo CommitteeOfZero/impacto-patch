@@ -1,4 +1,4 @@
-local numberOfPages = 1;
+local numberOfPages = 0;
 local i = numberOfPages;
 while root.SpriteSheets["ManualSheet" .. i] ~= nil do
     root.SpriteSheets["ManualSheet" .. i] = nil

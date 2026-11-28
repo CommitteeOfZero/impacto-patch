@@ -1,0 +1,146 @@
+{
+    "profiles": [
+        "achievementsystem.lua",
+        "buttonprompt.lua",
+        "game.lua",
+        "patch.lua",
+        "sprites.lua",
+        "subtitle.lua",
+        "vfs.lua",
+
+        "hud/delusiontrigger.lua",
+        "hud/extramenus.lua",
+        "hud/helpmenu.lua"
+    ],
+
+    "script": {
+        "game": "chaos_head_lcc",
+        "platform": "ps3",
+        "language": "jpn",
+
+        "files": [
+            "script/_Startup.scx",
+            "script/CHLCC_AA10.scx"
+        ]
+    },
+
+    "gamedata": {
+        ".": [
+            "movie.mlp",
+            "script.mlp",
+            "system.mlp",
+
+            "subtitles/ENDROLL_AYA_karaonly.ass",
+            "subtitles/ENDROLL_AYA_PSP_karaonly.ass",
+            "subtitles/ENDROLL_KOZ_karaonly.ass",
+            "subtitles/ENDROLL_KOZ_PSP_karaonly.ass",
+            "subtitles/ENDROLL_MIA_karaonly.ass",
+            "subtitles/ENDROLL_MIA_PSP_karaonly.ass",
+            "subtitles/ENDROLL_NAN_karaonly.ass",
+            "subtitles/ENDROLL_NAN_PSP_karaonly.ass",
+            "subtitles/ENDROLL_RIM_karaonly.ass",
+            "subtitles/ENDROLL_RIM_PSP_karaonly.ass",
+            "subtitles/ENDROLL_SEN_karaonly.ass",
+            "subtitles/ENDROLL_SEN_PSP_karaonly.ass",
+            "subtitles/ENDROLL_YUA_karaonly.ass",
+            "subtitles/ENDROLL_YUA_PSP_karaonly.ass",
+            "subtitles/OP_karaonly.ass",
+            "subtitles/OP2_karaonly.ass",
+            "subtitles/OP3_karaonly.ass",
+            "subtitles/OP4_karaonly.ass"
+        ],
+
+        "achievements": [
+            "achievements/TROP000.PNG",
+            "achievements/TROP001.PNG",
+            "achievements/TROP002.PNG",
+            "achievements/TROP003.PNG",
+            "achievements/TROP004.PNG",
+            "achievements/TROP005.PNG",
+            "achievements/TROP006.PNG",
+            "achievements/TROP007.PNG",
+            "achievements/TROP008.PNG",
+            "achievements/TROP009.PNG",
+            "achievements/TROP010.PNG",
+            "achievements/TROP011.PNG",
+            "achievements/TROP012.PNG",
+            "achievements/TROP013.PNG",
+            "achievements/TROP014.PNG",
+            "achievements/TROP015.PNG",
+            "achievements/TROP016.PNG",
+            "achievements/TROP017.PNG",
+            "achievements/TROP018.PNG",
+            "achievements/TROP019.PNG",
+            "achievements/TROP020.PNG",
+            "achievements/TROP021.PNG",
+            "achievements/TROP022.PNG",
+            "achievements/TROP023.PNG",
+            "achievements/TROP024.PNG",
+            "achievements/TROP025.PNG",
+            "achievements/TROP026.PNG",
+            "achievements/TROP027.PNG",
+            "achievements/TROP028.PNG",
+            "achievements/TROP029.PNG",
+            "achievements/TROP030.PNG",
+            "achievements/TROP031.PNG",
+            "achievements/TROP032.PNG",
+            "achievements/TROP033.PNG",
+            "achievements/TROP034.PNG",
+            "achievements/TROP035.PNG",
+            "achievements/TROP036.PNG",
+            "achievements/TROP037.PNG",
+            "achievements/TROP038.PNG",
+            "achievements/TROP039.PNG",
+            "achievements/TROP040.PNG",
+            "achievements/TROP041.PNG",
+            "achievements/TROP042.PNG",
+            "achievements/TROP043.PNG",
+            "achievements/TROP044.PNG",
+            "achievements/TROP045.PNG",
+            "achievements/TROP046.PNG",
+            "achievements/TROP047.PNG",
+            "achievements/TROP048.PNG",
+            "achievements/TROP049.PNG",
+            "achievements/TROP050.PNG",
+
+            "achievements/TROPLOCK.PNG"
+        ],
+
+        "fonts": [
+            "fonts/Futehodo-MaruGothic.ttf",
+            "fonts/genkai-mincho_edited.otf",
+            "fonts/KTEGAKI.ttf",
+            "fonts/LilitaOne-Regular.ttf",
+            "fonts/Natsuzemi-MaruGothic-Black.ttf",
+            "fonts/SourGummy-SemiBold.ttf",
+            "fonts/SwankyandMooMoo-Regular.ttf"
+        ],
+
+        "movie": [
+            "movie/ENDROLL_RIM.webm",
+            "movie/ENDROLL_NAN.webm",
+            "movie/ENDROLL_SEN.webm",
+            "movie/ENDROLL_YUA.webm",
+            "movie/ENDROLL_MIA.webm",
+            "movie/ENDROLL_AYA.webm",
+            "movie/ENDROLL_KOZ.webm",
+            "movie/ENDROLL_SEI.webm",
+            "movie/ENDROLL_RIM_PSP.webm",
+            "movie/ENDROLL_NAN_PSP.webm",
+            "movie/ENDROLL_SEN_PSP.webm",
+            "movie/ENDROLL_YUA_PSP.webm",
+            "movie/ENDROLL_MIA_PSP.webm",
+            "movie/ENDROLL_AYA_PSP.webm",
+            "movie/ENDROLL_KOZ_PSP.webm",
+            "movie/OP2.webm",
+            "movie/movie_op_swi.webm"
+        ],
+
+        "system": [
+            "system/ID00014.png",
+            "system/ID00021.png",
+            "system/ID00026.png",
+            "system/ID00027.png"
+        ]
+    }
+}

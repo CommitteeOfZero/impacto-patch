@@ -1,3 +1,11 @@
+local numberOfPages = 0
+local i = numberOfPages;
+while root.Sprites["ManualPage" .. i] ~= nil do
+    root.Sprites["ManualPage" .. i] = nil
+    i = i + 1
+    root.HelpMenu.ManualPages[i] = nil; -- 1 indexed array
+end
+
 root.Overlay.HelpMenu = {
     UseOverlayHelp = true,
     Sections = {

@@ -13,3 +13,8 @@
 *.scs
 *.sct
 *.sdb
+
+*.zip
+
+**/out/
+/scripts/config.json
