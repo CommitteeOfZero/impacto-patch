@@ -20,7 +20,9 @@
 
         "files": [
             "script/_Startup.scx",
-            "script/CHLCC_AA10.scx"
+            "script/CHLCC_AA01.scx",
+            "script/CHLCC_AA10.scx",
+            "script/CHLCC_AY08.scx"
         ]
     },
 
